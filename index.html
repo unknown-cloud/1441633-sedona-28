@@ -23,7 +23,7 @@
 
    <main>
      <figure>
-       <img src="img/welcome.png" width="457" height="351" alt="Welcome to Sedona">
+       <img src="img/welcome.png" width="457" height="351" alt="Добро пожаловать в Седону">
      </figure>
 
      <section>
@@ -77,12 +77,13 @@
        <h2>Заинтересовались?</h2>
        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
        <a href="">
-          <img src="img/map.jpg" width="1199" height="594" alt="Карта">>
+          <img src="img/map.jpg" width="1199" height="594" alt="Карта">
        </a>
      </section>
    </main>
 
    <footer>
+     <h2 class="visually-hidden">Контакты</h2>
      <p>#visitsedona<br>
         ТЕЛ: +7(495) 666-01-66
      </p>
@@ -108,10 +109,23 @@
 
    <section>
      <h2>Поиск гостиницы в Седоне</h2>
-     Дата заезда:
-     Дата выезда:
-     Взрослые:
-     Дети:
+     <p>
+       <label for="arrival-date">Дата заезда:</label>
+       <input id="arrival-date" type="text" name="date" value="24 апреля 2017">
+     </p>
+     <p>
+       <label for="departure-date">Дата выезда:</label>
+       <input id="departure-date" type="text" name="date" value="4 июля 2017">
+     </p>
+     <p>
+       <label for="adults">Взрослые:</label>
+       <input id="adults" type="text" name="number" value="2">
+     </p>
+     <p>
+       <label for="children">Дети:</label>
+       <input id="children" type="text" name="number" value="0">
+     </p>
+
      <button type="button">Найти</button>
    </section>
 
