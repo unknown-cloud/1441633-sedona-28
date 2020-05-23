@@ -13,7 +13,7 @@
          <img src="img/logo.png" width="138" height="70" alt="Седона">
        </a>
        <ul>
-         <li><a href="index.html">Информация</a></li>
+         <li><a href="#">Информация</a></li>
          <li><a href="">Фото и видео</a></li>
          <li><a href="">Карта штата</a></li>
          <li><a href="hotels.html">Гостиницы</a></li>
@@ -108,7 +108,8 @@
    </footer>
 
    <section>
-     <h2>Поиск гостиницы в Седоне</h2>
+     <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+     <button type="button">Поиск гостиницы в Седоне</button>
      <form action="https://echo.htmlacademy.ru" method="post">
        <p>
          <label for="arrival-date">Дата заезда:</label>
@@ -120,11 +121,11 @@
        </p>
        <p>
          <label for="adults">Взрослые:</label>
-         <input id="adults" type="text" name="number" value="2">
+         <input id="adults" type="number" name="number" value="2">
        </p>
        <p>
          <label for="children">Дети:</label>
-         <input id="children" type="text" name="number" value="0">
+         <input id="children" type="number" name="number" value="0">
        </p>
 
        <button type="submit">Найти</button>
