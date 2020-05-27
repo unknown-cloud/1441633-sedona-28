@@ -21,73 +21,77 @@
    </header>
 
    <main>
+     <h1 class="visually-hidden">Выбор гостиниц Седоны</h1>
      <section>
-       <h1 class="visually-hidden">Фильтр гостиниц Седоны</h1>
+       <h2 class="visually-hidden">Фильтр гостиниц</h2>
        <form action="https://echo.htmlacademy.ru" method="get">
-       <div>
-         <fieldset>
-           <legend>Инфраструктура:</legend>
-           <ul>
-             <li>
-               <input type="checkbox" name="pools" id="filter-pools" checked>
-               <label for="filter-pools">Бассейн</label>
-              </li>
-             <li>
-               <input type="checkbox" name="parking" id="filter-parking">
-               <label for="filter-parking">Парковка</label>
-             </li>
-             <li>
-               <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-               <label for="filter-wi-fi">Wi-fi</label>
-             </li>
-           </ul>
-         </fieldset>
-         <fieldset>
-           <legend>Тип жилья</legend>
-           <ul>
-             <li>
-               <input type="checkbox" name="hotel" id="filter-hotel" checked>
-               <label for="filter-hotel">Гостиница</label>
-             </li>
-             <li>
-               <input type="checkbox" name="motel" id="filter-motel" checked>
-               <label for="filter-motel">Мотель</label>
-             </li>
-             <li>
-               <input type="checkbox" name="apartments" id="filter-apartments" checked>
-               <label for="filter-apartments">Апартаменты</label>
-             </li>
-           </ul>
-         </fieldset>
-         <fieldset>
-           <legend>Стоимость в сутки (Р):</legend>
-           <ul>
-             <li>
-               <label for="filter-price">от 0 до 3000:</label>
-             </li>
-             <li>
-               <input type="range" id="filter-price" name="price" min="0" max="3000">
-             </li>
-           </ul>
-         </fieldset>
-         <button type="submit">Показать</button>
-       </div>
-     </section>
-
-     <section>
-       <div>
-         <h2>Найдено: 3</h2>
-         <ul>
-           <li>Сортировка:
+         <div>
+           <fieldset>
+             <legend>Инфраструктура:</legend>
              <ul>
-               <li>по цене</li>
-                <li>по типу</li>
-                <li>по рейтингу</li>
+               <li>
+                 <input type="checkbox" name="facilities" value="pools" id="filter-pools" checked>
+                 <label for="filter-pools">Бассейн</label>
+                </li>
+               <li>
+                 <input type="checkbox" name="facilities" value="parking" id="filter-parking">
+                 <label for="filter-parking">Парковка</label>
+               </li>
+               <li>
+                 <input type="checkbox" name="facilities" value="wi-fi" id="filter-wi-fi">
+                 <label for="filter-wi-fi">Wi-fi</label>
+               </li>
+             </ul>
+           </fieldset>
+           <fieldset>
+             <legend>Тип жилья</legend>
+             <ul>
+               <li>
+                 <input type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
+                 <label for="filter-hotel">Гостиница</label>
+               </li>
+               <li>
+                 <input type="checkbox" name="housing" value="motel" id="filter-motel" checked>
+                 <label for="filter-motel">Мотель</label>
+               </li>
+               <li>
+                 <input type="checkbox" name="housing" value="apartments" id="filter-apartments" checked>
+                 <label for="filter-apartments">Апартаменты</label>
+               </li>
+             </ul>
+           </fieldset>
+           <fieldset>
+             <legend>Стоимость в сутки (Р):</legend>
+             <ul>
+               <li>
+                 <label>от<input type="text" name="price" value="0"></label>
+                 <label>до<input type="text" name="price" value="3000"></label>
+               </li>
+               <li>
+                  <input type="range" id="filter-price" name="price" min="0" max="3000">
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div>
+            </fieldset>
+           <button type="submit">Показать</button>
+         </div>
 
+         <div>
+           <h2>Найдено: 3</h2>
+           <ul>
+             <li>Сортировка:
+               <ul>
+                 <li><button type="button">по цене</button></li>
+                  <li><button type="button">по типу</button></li>
+                  <li><button type="button">по рейтингу</button></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Результаты поиска</h2>
        <ul>
          <li>
            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -126,13 +130,13 @@
    <footer>
      <h2 class="visually-hidden">Контакты</h2>
        <p>
-         <a href="#">#visitsedona</a><br> <!-- Куда здесь сослаться?-->
+         #visitsedona<br>
          <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
        </p>
      </p>
 
      <section>
-       <h2 class="visually-hidden">Соцсети</h2>
+       <h2 class="visually-hidden">Найти нас в социальных сетях</h2>
         <ul>
           <li>
             <a href="">Твиттер</a>
