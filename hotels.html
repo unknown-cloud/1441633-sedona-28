@@ -3,7 +3,7 @@
  <head>
    <meta charset="utf-8">
    <title>Гостиницы</title>
-   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link href="css/stylesheet.css">
    <link href="css/normalize.css" rel="stylesheet" >
    <link href="css/style.css" rel="stylesheet" >
 
@@ -15,7 +15,7 @@
        <a href="index.html">
          <img src="img/logo.png" width="138" height="70" alt="Седона На главную">
        </a>
-       <ul>
+       <ul class="site-navigation">
          <li><a href="#">Информация</a></li>
          <li><a href="">Фото и видео</a></li>
          <li><a href="">Карта штата</a></li>
@@ -92,7 +92,7 @@
 
       <section>
         <h2 class="visually-hidden">Результаты поиска</h2>
-       <ul class="results">
+       <ul>
          <li>
            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
            <h2>Amara resort & SPA</h2>
@@ -127,30 +127,31 @@
      </section>
     </main>
 
-   <footer>
-     <h2 class="visually-hidden">Контакты</h2>
-       <p>
-         #visitsedona<br>
-         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-       </p>
+    <footer class="main-footer">
+       <secton class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>
+          #visitsedona<br>
+          <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+        </p>
+      </section>
 
-     <section>
-       <h2 class="visually-hidden">Найти нас в социальных сетях</h2>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul>
           <li>
-            <a href="">Твиттер</a>
+            <a class="social-button" href=""><span>Твиттер</span></a>
           </li>
           <li>
-            <a href="">Фейсбук</a>
+            <a class="social-button" href=""><span>Фейсбук</span></a>
           </li>
           <li>
-            <a href="">Вкотакте</a>
+            <a class="social-button" href=""><span>Вкотакте</span></a>
           </li>
         </ul>
       </section>
-
       <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></a>
+       <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></a>
       </p>
     </footer>
 
