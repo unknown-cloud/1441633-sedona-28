@@ -15,7 +15,7 @@
 /* Variables */
 :root {
   --basic-black:#000000;
-  --words-gray:#666666
+  --words-gray:#666666;
   --basic-white:#ffffff;
   --basic-blue:#81B3D2;
   --basic-grey:#EEEEEE;
@@ -54,9 +54,6 @@ img {
 /* Navigation */
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -64,11 +61,24 @@ img {
   list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
-  background-color: var(--muddy-gray);
+.site-navigation-link {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
 }
 
+.site-navigation-link:hover {
+  color: var(--basic-blue);
+}
 
+.site-navigation-link:active {
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.site-navigation-link-current {
+  color: var(--muddy-gray);
+}
 /*Head*/
 .logo {
   text-align: center;
