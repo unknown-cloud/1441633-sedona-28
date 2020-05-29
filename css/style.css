@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/ptsans.woff2') format('woff2'),
+       url('../fonts/ptsans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url('../fonts/ptsansbold.woff2') format('woff2'),
+       url('../fonts/ptsansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 /* Variables */
 :root {
   --basic-black:#000000;
@@ -16,7 +30,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;.
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-height: 21px;
   font-weight: normal;
