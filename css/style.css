@@ -1,0 +1,166 @@
+/* Variables */
+:root {
+  --basic-black:#000000;
+  --words-gray:#666666
+  --basic-white:#ffffff;
+  --basic-blue:#81B3D2;
+  --basic-grey:#EEEEEE;
+  --muddy-gray:#766357;
+  --light-gray:#F2F2F2;
+  --line-light-gray:#E5E5E5;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;.
+  font-size: 14px;
+  font-height: 21px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--muddy-gray);
+}
+
+
+/*Head*/
+.logo {
+  text-align: center;
+
+}
+
+/*Features*/
+.features {
+  text-align: center;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature h1 {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.feature p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.feature h2 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features h3 {
+
+}
+
+.features h4 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+/*Popap*/
+
+.popap {
+  display: none;
+}
+
+/*Button*/
+.button {
+  font: inherit;
+  text-align: center;
+  font-weight: bold;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--muddy-gray);
+  border: none;
+}
+
+/*Info buttons*/
+.rating {
+  font: inherit;
+  text-align: center;
+  color: var(--words-gray);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--light-gray);
+  border: none;
+}
+
+.details {
+  font: inherit;
+  text-align: center;
+  font-weight: bold;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+/*Footer*/
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/*Socai button*/
+
+.social-button {
+  color: var(--basic-blue);
+}
+
+.visually-hidden {
+  visibility: hidden;
+}

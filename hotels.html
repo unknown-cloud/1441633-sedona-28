@@ -3,15 +3,19 @@
  <head>
    <meta charset="utf-8">
    <title>Гостиницы</title>
+   <link href="css/stylesheet.css">
+   <link href="css/normalize.css" rel="stylesheet" >
+   <link href="css/style.css" rel="stylesheet" >
+
  </head>
 
  <body>
    <header>
-     <nav>
+     <nav class="main-navigation">
        <a href="index.html">
          <img src="img/logo.png" width="138" height="70" alt="Седона На главную">
        </a>
-       <ul>
+       <ul class="site-navigation">
          <li><a href="#">Информация</a></li>
          <li><a href="">Фото и видео</a></li>
          <li><a href="">Карта штата</a></li>
@@ -64,11 +68,11 @@
              <legend>Стоимость в сутки (Р):</legend>
              <ul>
                <li>
-                 <label>от<input type="text" name="price" value="0"></label>
-                 <label>до<input type="text" name="price" value="3000"></label>
+                 <label>от<input type="text" name="price-min" value="0"></label>
+                 <label>до<input type="text" name="price-max" value="3000"></label>
                </li>
                <li>
-                  <input type="range" id="filter-price" name="price" min="0" max="3000">
+                  <input type="range" id="filter-price" name="price-range" min="0" max="3000">
                 </li>
               </ul>
             </fieldset>
@@ -94,9 +98,9 @@
            <h2>Amara resort & SPA</h2>
            <p>Гостиница от 4000 р.</p>
            <p>
-             <a href="#">Подробнее</a>
-             <button type="button">Забронировать</button>
-             Рейтинг: 8,5
+             <a class="details" href="#">Подробнее</a>
+             <button type="button" class="button">Забронировать</button>
+             <span class="rating">Рейтинг: 8,5</span>
            </p>
          </li>
          <li>
@@ -104,9 +108,9 @@
            <h2>Desert quail inn</h2>
            <p>Мотель от 3000 р.</p>
            <p>
-             <a href="#">Подробнее</a>
-             <button type="button">Забронировать</button>
-             Рейтинг: 8,9
+             <a class="details" href="#">Подробнее</a>
+             <button type="button" class="button">Забронировать</button>
+             <span class="rating">Рейтинг: 8,9</span>
            </p>
          </li>
          <li>
@@ -114,40 +118,40 @@
            <h2>Villas at poco diablo</h2>
            <p>Апартаменты от 2000 р.</p>
            <p>
-             <a href="#">Подробнее</a>
-             <button type="button">Забронировать</button>
-             Рейтинг: 9,2
+             <a class="details" href="#">Подробнее</a>
+             <button type="button" class="button">Забронировать</button>
+             <span class="rating">Рейтинг: 9,2</span>
            </p>
          </li>
        </ul>
      </section>
     </main>
 
-   <footer>
-     <h2 class="visually-hidden">Контакты</h2>
-       <p>
-         #visitsedona<br>
-         <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-       </p>
-     </p>
+    <footer class="main-footer">
+       <secton class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>
+          #visitsedona<br>
+          <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+        </p>
+      </section>
 
-     <section>
-       <h2 class="visually-hidden">Найти нас в социальных сетях</h2>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul>
           <li>
-            <a href="">Твиттер</a>
+            <a class="social-button" href=""><span>Твиттер</span></a>
           </li>
           <li>
-            <a href="">Фейсбук</a>
+            <a class="social-button" href=""><span>Фейсбук</span></a>
           </li>
           <li>
-            <a href="">Вкотакте</a>
+            <a class="social-button" href=""><span>Вкотакте</span></a>
           </li>
         </ul>
       </section>
-
       <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></a>
+       <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></a>
       </p>
     </footer>
 
