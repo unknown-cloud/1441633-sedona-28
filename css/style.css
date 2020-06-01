@@ -286,7 +286,10 @@ img {
 
 /*Catalog's buttons*/
 .button-details {
-  padding: 4px 17px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
   text-align: center;
   font-weight: bold;
   color: var(--basic-white);
@@ -306,8 +309,10 @@ img {
 }
 
 .button-reserv {
-  width: 142px;
-  height: 27px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -326,7 +331,10 @@ img {
 }
 
 .rating {
-  padding: 3px 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
   text-align: center;
   color: var(--words-gray);
   text-transform: uppercase;
