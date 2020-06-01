@@ -28,7 +28,7 @@
      <section>
        <h2 class="visually-hidden">Фильтр гостиниц</h2>
        <form action="https://echo.htmlacademy.ru" method="get">
-         <div>
+         <div class="filter">
            <fieldset>
              <legend>Инфраструктура:</legend>
              <ul>
@@ -75,15 +75,15 @@
                 </li>
               </ul>
             </fieldset>
-           <button type="submit">Показать</button>
+           <button type="submit" class="filter-button">Показать</button>
          </div>
 
-         <div>
+         <div class="sorting">
            <h2>Найдено: 3</h2>
            <p>Сортировка:
-              <button type="button">по цене</button>
-              <button type="button">по типу</button>
-              <button type="button">по рейтингу</button>
+              <button type="button" class="button-sorting button-sorting-current">по цене</button>
+              <button type="button" class="button-sorting">по типу</button>
+              <button type="button" class="button-sorting">по рейтингу</button>
             </p>
           </div>
         </form>
@@ -91,14 +91,14 @@
 
       <section>
         <h2 class="visually-hidden">Результаты поиска</h2>
-       <ul>
+       <ul class="hotels-list">
          <li>
            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
            <h2>Amara resort & SPA</h2>
            <p>Гостиница от 4000 р.</p>
            <p>
-             <a class="details" href="#">Подробнее</a>
-             <button type="button" class="button">Забронировать</button>
+             <a class="button-details" href="#">Подробнее</a>
+             <button type="button" class="button-reserv">Забронировать</button>
              <span class="rating">Рейтинг: 8,5</span>
            </p>
          </li>
@@ -107,8 +107,8 @@
            <h2>Desert quail inn</h2>
            <p>Мотель от 3000 р.</p>
            <p>
-             <a class="details" href="#">Подробнее</a>
-             <button type="button" class="button">Забронировать</button>
+             <a href="#" class="button-details" >Подробнее</a>
+             <button type="button" class="button-reserv">Забронировать</button>
              <span class="rating">Рейтинг: 8,9</span>
            </p>
          </li>
@@ -117,8 +117,8 @@
            <h2>Villas at poco diablo</h2>
            <p>Апартаменты от 2000 р.</p>
            <p>
-             <a class="details" href="#">Подробнее</a>
-             <button type="button" class="button">Забронировать</button>
+             <a class="button-details" href="#">Подробнее</a>
+             <button type="button" class="button-reserv">Забронировать</button>
              <span class="rating">Рейтинг: 9,2</span>
            </p>
          </li>
@@ -139,18 +139,18 @@
         <h2 class="visually-hidden">Соцсети</h2>
         <ul>
           <li>
-            <a class="social-button" href=""><span>Твиттер</span></a>
+            <a href="" class="social-button"><span>Твиттер</span></a>
           </li>
           <li>
-            <a class="social-button" href=""><span>Фейсбук</span></a>
+            <a href="" class="social-button"><span>Фейсбук</span></a>
           </li>
           <li>
-            <a class="social-button" href=""><span>Вкотакте</span></a>
+            <a href="" class="social-button"><span>Вкотакте</span></a>
           </li>
         </ul>
       </section>
       <p>
-       <a href="https://htmlacademy.ru/intensive/htmlcss">Website by<img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></a>
+       <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="link-academy">Website by</span><img src="img/logo-htmlacademy.svg" class="link-academy-logo" width="114" height="40" alt="HTML Academy"></a>
       </p>
     </footer>
 

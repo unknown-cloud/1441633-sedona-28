@@ -12,16 +12,22 @@
   font-weight: 700;
   font-style: normal;
 }
-/* Variables */
+
 :root {
-  --basic-black:#000000;
-  --words-gray:#666666;
-  --basic-white:#ffffff;
-  --basic-blue:#81B3D2;
-  --basic-grey:#EEEEEE;
-  --muddy-gray:#766357;
-  --light-gray:#F2F2F2;
-  --line-light-gray:#E5E5E5;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+
+  --basic-blue: #81B3D2;
+  --deep-blue: #669EC0;
+  --dust-blue: #5496BD;
+
+  --basic-gray: #EEEEEE;
+  --words-gray: #666666;
+  --muddy-gray: #766357;
+  --muddy-gray-hover: #604E43;
+  --muddy-gray-active: #503E33;
+  --light-gray: #F2F2F2;
+  --line-light-gray: #E5E5E5;
 }
 
 /* Global */
@@ -37,7 +43,6 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -62,6 +67,7 @@ img {
 }
 
 .site-navigation-link {
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -82,7 +88,9 @@ img {
 /*Head*/
 .logo {
   text-align: center;
-
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*Features*/
@@ -95,24 +103,36 @@ img {
 }
 
 .feature h1 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.feature p {
-  font-weight: bold;
+.features p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.fefeature-list p {
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
 }
 
-.feature h2 {
+.features h2 {
   font-size: 21px;
   line-height: 21px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .features h3 {
-
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--basic-black);
 }
 
 .features h4 {
@@ -120,37 +140,153 @@ img {
   line-height: 24px;
 }
 
+.blue-blok {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.gray-blok {
+  background-color: var(--basic-grey);
+}
+
 /*Popap*/
+.button-search-hotel {
+  width: 568px;
+  height: 86px;
+  background-color: var(--muddy-gray);
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.button-search-hotel:hover {
+  background-color: var(--muddy-gray-hover);
+}
+
+.button-search-hotel:active {
+  background-color: var(--muddy-gray-active);
+  outline: none;
+}
+
+.search-hotel:active {
+  opacity: 0.3;
+}
 
 .popap {
   display: none;
 }
 
-/*Button*/
-.button {
-  font: inherit;
-  text-align: center;
-  font-weight: bold;
+ /* Filter*/
+.filter {
   color: var(--basic-white);
-  vertical-align: middle;
+  background-image: url("../img/background-photo.jpg");
+  background-color: var(--basic-blue);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+}
+
+.filter-button {
+  border: 2px solid;
+  border-color: var(--basic-white);
+  width: 137px;
+  height: 36px;
   text-transform: uppercase;
-  background-color: var(--muddy-gray);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.filter-button:hover {
+  background-color: var(--basic-white);
+  border: 2px solid;
+  border-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.button-sorting {
+  background-color: transparent;
+  text-transform: uppercase;
+  opacity: 0.3;
+  border: none;
+  border-bottom: 1px dotted;
+  border-color: var(--basic-blue);
+}
+
+.button-sorting-current {
+  color: var(--basic-blue);
   border: none;
 }
 
-/*Info buttons*/
-.rating {
-  font: inherit;
-  text-align: center;
-  color: var(--words-gray);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--light-gray);
+.button-sorting:hover {
+  color: var(--basic-blue);
+}
+
+.button-sorting:active {
+  color: var(--basic-black);
+  opacity: 1;
   border: none;
 }
 
-.details {
-  font: inherit;
+/*Catalog*/
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotels-list h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-list p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.hotels-list h2:hover {
+  color: var(--basic-blue);
+}
+
+.hotels-list h2:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/*Catalog's buttons*/
+.button-details {
+  padding: 4px 17px;
   text-align: center;
   font-weight: bold;
   color: var(--basic-white);
@@ -160,10 +296,55 @@ img {
   border: none;
 }
 
+.button-details:hover {
+  background-color: var(--deep-blue);
+}
+
+.button-details:active {
+  background-color: var(--dust-blue);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reserv {
+  width: 142px;
+  height: 27px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--muddy-gray);
+  border: none;
+}
+
+.button-reserv:hover {
+  background-color: var(--muddy-gray-hover);
+}
+
+.button-reserv:active {
+  background-color: var(--muddy-gray-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rating {
+  padding: 3px 15px;
+  text-align: center;
+  color: var(--words-gray);
+  text-transform: uppercase;
+  background-color: var(--light-gray);
+  border: none;
+}
+
 /*Footer*/
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  opacity: 0.9;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .footer-contacts a {
@@ -173,16 +354,34 @@ img {
 
 .footer-social {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .footer-social ul {
   list-style: none;
 }
 
+.link-academy {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.link-academy-logo:hover {
+  color: var(--basic-blue);
+}
+
+.link-academy-logo:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 /*Socai button*/
 
 .social-button {
-  color: var(--basic-blue);
+
 }
 
 .visually-hidden {
