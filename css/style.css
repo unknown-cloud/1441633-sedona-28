@@ -28,6 +28,8 @@
   --muddy-gray-active: #503E33;
   --light-gray: #F2F2F2;
   --line-light-gray: #E5E5E5;
+
+  --bold: 700;
 }
 
 /* Global */
@@ -38,7 +40,7 @@ body {
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -67,7 +69,7 @@ img {
 }
 
 .site-navigation-link {
-  font-weight: bold;
+  font-family: "PT Sans Bold";
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -93,63 +95,49 @@ img {
   background-position: center;
 }
 
-/*Features*/
-.features {
+/*Base-section*/
+.base-section-tittle {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
 }
 
-.feature-list {
+.base-section-description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-list {
   list-style: none;
 }
 
-.feature h1 {
-  font-weight: bold;
+.base-section-tittle h1 {
+  font-weight: var(--bold);
   font-size: 21px;
-  line-height: 26px;
 }
 
-.features p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.fefeature-list p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.features h2 {
+.base-section-tittle h2, h3 {
+  font-family: "PT Sans Bold";
   font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  text-align: center;
 }
 
-.features h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--basic-black);
-}
-
-.features h4 {
+.base-section-tittle h4 {
+  font-family: "PT Sans Bold";
   font-size: 30px;
   line-height: 24px;
 }
 
-.blue-blok {
+.blue-block {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
-.gray-blok {
+.gray-block {
   background-color: var(--basic-grey);
 }
 
-/*Popap*/
+/*Popup*/
 .button-search-hotel {
   width: 568px;
   height: 86px;
@@ -175,7 +163,7 @@ img {
   opacity: 0.3;
 }
 
-.popap {
+.popup {
   display: none;
 }
 
@@ -192,9 +180,9 @@ img {
 }
 
 .filter legend {
+  font-weight: var(--bold);
   font-size: 16px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 .filter ul {
@@ -229,9 +217,10 @@ img {
 }
 
 .sorting h2 {
+  font-family: "PT Sans Bold";
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+
 }
 
 .button-sorting {
@@ -286,12 +275,12 @@ img {
 
 /*Catalog's buttons*/
 .button-details {
+  font-family: "PT Sans Bold";
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 16px;
   text-align: center;
-  font-weight: bold;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -308,29 +297,30 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-reserv {
+.button-reserve {
+  font-family: "PT Sans Bold";
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
   padding-right: 17px;
   text-align: center;
-  font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--muddy-gray);
   border: none;
 }
 
-.button-reserv:hover {
+.button-reserve:hover {
   background-color: var(--muddy-gray-hover);
 }
 
-.button-reserv:active {
+.button-reserve:active {
   background-color: var(--muddy-gray-active);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
+  font-weight: normal;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 15px;
@@ -347,23 +337,28 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   opacity: 0.9;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .footer-contacts {
+  font-family: "PT Sans Bold";
   font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .footer-contacts a {
-  color: var(--basic-black);
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 .footer-social {
   text-align: center;
-  font-size: 14px;
-  line-height: 26px;
+  text-decoration: none;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
 .footer-social ul {
@@ -371,17 +366,16 @@ img {
 }
 
 .link-academy {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
   vertical-align: middle;
+  text-decoration: none;
+  color: var(--basic-black);
 }
 
-.link-academy-logo:hover {
-  color: var(--basic-blue);
+.icon-academy path:hover {
+  fill: var(--basic-blue);
 }
 
-.link-academy-logo:active {
+.icon-academy:active {
   color: var(--basic-black);
   opacity: 0.3;
 }

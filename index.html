@@ -28,37 +28,36 @@
        <img src="img/welcome.png" width="457" height="351" alt="Добро пожаловать в Седону">
      </figure>
 
-     <section class="features">
+     <section class="base-section-tittle">
        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-       <ul class="feature-list">
-         <div class="blue-blok">
-         <li>
+       <ul class="features-list base-section-description">
+         <li class="blue-block">
            <h2>Настоящий городок</h2>
            <p>- №1 -</p>
-           <p>Седона-не атракцион для туристов, там течет своя жизнь</p>
+           <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
            <!-- Иконки можно вставить при помощи псевдокласса :before в css -->
            <figure>
              <img src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
            </figure>
-         </div>
-           <ul class="feature-list">
-             <li>
-               <h3>Жильё</h3>
-               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-             </li>
-             <li>
-               <h3>Еда</h3>
-               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-             </li>
-             <li>
-               <h3>Сувениры</h3>
-               <p>Не только китайского, но и местного производства!</p>
-             </li>
-           </ul>
          </li>
-         <div class="blue-blok">
+       </ul>
+       <ul class="features-list base-section-description">
          <li>
+           <h3>Жильё</h3>
+           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+         </li>
+         <li>
+           <h3>Еда</h3>
+           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+         </li>
+         <li>
+           <h3>Сувениры</h3>
+           <p>Не только китайского, но и местного производства!</p>
+         </li>
+       </ul>
+       <ul class="features-list base-section-description">
+         <li class="blue-block">
            <h2>Там есть мост дьявола</h2>
            <p>- №2 -</p>
            <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
@@ -66,8 +65,6 @@
              <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
            </figure>
          </li>
-       </div>
-         <div class="gray-blok">
          <li>
            <h3>Небольшая площадь</h3>
            <p>- №3 -</p>
@@ -83,16 +80,15 @@
            <p>- №5 -</p>
            <p>Большинство едет в Гранд-Каньон и толпится там</p>
          </li>
-       </div>
        </ul>
      </section>
 
-     <section class="features">
+     <section class="base-section-tittle">
        <h4>Заинтересовались?</h4>
        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
        <button type="button" class="button-search-hotel"><span class="search-hotel">Поиск гостиницы в Седоне</button>
-       <section class="popap">
+       <section class="popup">
          <h2 class="visually-hidden">Форма для поиска гостиницы</h2>
          <form action="https://echo.htmlacademy.ru" method="post">
            <p>
@@ -123,7 +119,7 @@
    </main>
 
    <footer class="main-footer">
-      <secton class="footer-contacts">
+      <section class="footer-contacts">
        <h2 class="visually-hidden">Контакты</h2>
        <p>#visitsedona<br>
          <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
@@ -145,7 +141,7 @@
        </ul>
      </section>
      <p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="link-academy">Website by</span><img src="img/logo-htmlacademy.svg" class="link-academy-logo" width="114" height="40" alt="HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-academy">Website by<span class="icon-academy"><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="HTML Academy"></span></a>
      </p>
    </footer>
 
