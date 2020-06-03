@@ -14,6 +14,8 @@
 }
 
 :root {
+  --font-bold: 'PT Sans Bold';
+
   --basic-black: #000000;
   --basic-white: #ffffff;
 
@@ -29,7 +31,6 @@
   --light-gray: #F2F2F2;
   --line-light-gray: #E5E5E5;
 
-  --bold: 700;
 }
 
 /* Global */
@@ -38,7 +39,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -69,7 +70,7 @@ img {
 }
 
 .site-navigation-link {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -96,7 +97,7 @@ img {
 }
 
 /*Base-section*/
-.base-section-tittle {
+.base-section {
   text-align: center;
   font-size: 14px;
   line-height: 26px;
@@ -113,7 +114,7 @@ img {
 }
 
 .base-section-tittle h1 {
-  font-weight: var(--bold);
+  font-family: "PT Sans Bold";
   font-size: 21px;
 }
 
@@ -180,7 +181,7 @@ img {
 }
 
 .filter legend {
-  font-weight: var(--bold);
+  font-family: "PT Sans Bold";
   font-size: 16px;
   line-height: 21px;
 }
@@ -366,12 +367,17 @@ img {
 }
 
 .link-academy {
-  vertical-align: middle;
-  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
   color: var(--basic-black);
 }
 
-.icon-academy path:hover {
+.link-academy-logo {
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.icon-academy:hover path {
   fill: var(--basic-blue);
 }
 
