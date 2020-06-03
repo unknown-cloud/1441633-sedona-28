@@ -104,7 +104,6 @@ img {
 }
 
 .base-section-description {
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
 }
@@ -113,18 +112,18 @@ img {
   list-style: none;
 }
 
-.base-section-tittle h1 {
-  font-family: "PT Sans Bold";
+.base-section h1 {
+  font-family: var(--font-bold);
   font-size: 21px;
 }
 
-.base-section-tittle h2, h3 {
-  font-family: "PT Sans Bold";
+.base-section-description h2, h3 {
+  font-family: var(--font-bold);
   font-size: 21px;
 }
 
-.base-section-tittle h4 {
-  font-family: "PT Sans Bold";
+.base-section h4 {
+  font-family: var(--font-bold);
   font-size: 30px;
   line-height: 24px;
 }
@@ -181,7 +180,7 @@ img {
 }
 
 .filter legend {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   font-size: 16px;
   line-height: 21px;
 }
@@ -218,7 +217,7 @@ img {
 }
 
 .sorting h2 {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   font-size: 21px;
   line-height: 26px;
 
@@ -262,7 +261,6 @@ img {
 .hotels-list p {
   font-size: 14px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 .hotels-list h2:hover {
@@ -276,7 +274,7 @@ img {
 
 /*Catalog's buttons*/
 .button-details {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 17px;
@@ -299,7 +297,7 @@ img {
 }
 
 .button-reserve {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -321,7 +319,6 @@ img {
 }
 
 .rating {
-  font-weight: normal;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 15px;
@@ -343,7 +340,7 @@ img {
 }
 
 .footer-contacts {
-  font-family: "PT Sans Bold";
+  font-family: var(--font-bold);
   font-size: 21px;
 }
 
