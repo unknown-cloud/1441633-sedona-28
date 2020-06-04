@@ -378,8 +378,8 @@ img {
   fill: var(--basic-blue);
 }
 
-.icon-academy:active {
-  color: var(--basic-black);
+.icon-academy:active path {
+  fill: var(--basic-black);
   opacity: 0.3;
 }
 
