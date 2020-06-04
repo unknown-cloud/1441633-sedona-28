@@ -97,32 +97,27 @@ img {
 }
 
 /*Base-section*/
-.base-section {
-  text-align: center;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.base-section-description {
-  font-size: 14px;
-  line-height: 21px;
-}
 
 .features-list {
   list-style: none;
 }
 
-.base-section h1 {
-  font-family: var(--font-bold);
-  font-size: 21px;
+.base-section {
+  text-align: center;
 }
 
-.base-section-description h2, h3 {
-  font-family: var(--font-bold);
-  font-size: 21px;
+.base-text {
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.base-section h4 {
+.base-title {
+  font-family: var(--font-bold);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.booking-section-title {
   font-family: var(--font-bold);
   font-size: 30px;
   line-height: 24px;
@@ -211,22 +206,14 @@ img {
   color: var(--basic-black);
 }
 
-.sorting {
+.sorting-text {
   font-size: 12px;
   line-height: 18px;
-}
-
-.sorting h2 {
-  font-family: var(--font-bold);
-  font-size: 21px;
-  line-height: 26px;
-
 }
 
 .button-sorting {
   background-color: transparent;
   text-transform: uppercase;
-  opacity: 0.3;
   border: none;
   border-bottom: 1px dotted;
   border-color: var(--basic-blue);
@@ -235,6 +222,10 @@ img {
 .button-sorting-current {
   color: var(--basic-blue);
   border: none;
+}
+
+.button-sorting-inactive {
+  opacity: 0.3;
 }
 
 .button-sorting:hover {
@@ -253,21 +244,11 @@ img {
   list-style: none;
 }
 
-.hotels-list h2 {
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.hotels-list p {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.hotels-list h2:hover {
+.hotels-list .base-title:hover {
   color: var(--basic-blue);
 }
 
-.hotels-list h2:active {
+.hotels-list .base-title:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
