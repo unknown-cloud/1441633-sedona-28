@@ -55,7 +55,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 /*Grid*/
@@ -108,6 +107,7 @@ img {
   height: 70px;
   position: absolute;
   left: 50%;
+  margin-left: -50px;
 }
 
 .site-navigation-link {
@@ -145,7 +145,10 @@ img {
 .content {
   width: 1200px;
   margin: 0 auto;
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
+
 /*Base-section*/
 
 .features-list {
@@ -159,6 +162,7 @@ img {
 .base-text {
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 0;
 }
 
 .base-title {
@@ -298,6 +302,29 @@ img {
 
 .hotels-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+
+.search-results {
+  display: flex;
+  background-color: var(--basic-white);
+  flex-direction: column;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.hotels-list .hotel-item {
+  margin: 0;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--line-light-gray);
 }
 
 .hotels-list .base-title:hover {
@@ -367,6 +394,7 @@ img {
   border: none;
 }
 
+
 /*Footer*/
 .main-footer {
   outline: 5px solid rgba(0, 100, 0, 0.7);
@@ -382,6 +410,7 @@ img {
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 163px;
 }
 
 .footer-main-page {
