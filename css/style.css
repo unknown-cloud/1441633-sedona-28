@@ -177,6 +177,8 @@ img {
   font-family: var(--main-font-bold);
   font-size: 21px;
   line-height: 26px;
+  margin-top: 42px;
+  margin-bottom: 33px;
 }
 
 .features-title {
@@ -189,6 +191,7 @@ img {
   font-family: var(--main-font-bold);
   font-size: 30px;
   line-height: 24px;
+  margin-top: 58px;
 }
 
 .blue-block {
@@ -202,6 +205,11 @@ img {
 
 /*Popup*/
 .button-search-hotel {
+  margin-top: 56px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 124px;
+  padding-right: 124px;
   width: 568px;
   height: 86px;
   background-color: var(--muddy-gray);
@@ -397,12 +405,14 @@ img {
   background-color: var(--basic-white);
   font-size: 14px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 163px;
+  text-align: center;
 }
 
 .footer-main-page {
@@ -411,13 +421,9 @@ img {
 }
 
 .footer-contacts {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-
   font-family: var(--main-font-bold);
   font-size: 21px;
-  margin: 0;
-  width: 251px;
+  width: 400px;
 }
 
 .footer-contacts a {
@@ -426,16 +432,17 @@ img {
 }
 
 .footer-social {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 
-  text-align: center;
+  align-self: center;
   text-decoration: none;
+  width: 400px;
 }
 
 .footer-link {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
+  width: 400px;
+  margin: 0;
+  padding-top: 40px;
+
 }
 
 .footer-social a {
