@@ -97,7 +97,7 @@ img {
 }
 
 .site-navigation-link {
-  display: flex;
+
   width: 264px;
   flex-basis: auto;
 
@@ -125,7 +125,7 @@ img {
 }
 
 .site-navigation-link-4 {
-  
+
 }
 
 .site-navigation-link:hover {
