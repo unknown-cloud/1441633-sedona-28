@@ -85,37 +85,47 @@ img {
 .site-navigation {
   list-style: none;
   display: flex;
+
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 72px;
   padding-right: 72px;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation-link {
+  display: flex;
+  width: 264px;
+  flex-basis: auto;
+
   color: var(--basic-black);
   font-family: var(--main-font-bold);
   font-size: 14px;
   line-height: 26px;
-  flex-basis: auto;
+
   border: 5px solid red;
-  flex-basis: max-content;
+
 }
 
 .site-navigation-link-1 {
-  align-self: flex-start;
+
+
 }
 
 .site-navigation-link-2 {
-  align-self: flex-start;
+
+
 }
 
 .site-navigation-link-3 {
-  align-self: flex-end;
+
 }
 
 .site-navigation-link-4 {
-  align-self: flex-end;
+  
 }
 
 .site-navigation-link:hover {
