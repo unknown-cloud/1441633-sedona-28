@@ -91,40 +91,34 @@ img {
   padding-bottom: 15px;
   padding-left: 72px;
   padding-right: 72px;
+}
 
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+.site-navigation-item {
+  flex-basis: 264px;
+}
+
+.site-navigation-item-1 {
+  text-align: left;
+}
+
+.site-navigation-item-2 {
+  text-align: left;
+}
+
+.site-navigation-item-3 {
+  text-align: right;
+}
+
+.site-navigation-item-4 {
+  text-align: right;
 }
 
 .site-navigation-link {
-
-  width: 264px;
-  flex-basis: auto;
-
   color: var(--basic-black);
   font-family: var(--main-font-bold);
   font-size: 14px;
   line-height: 26px;
-
-  border: 5px solid red;
-
-}
-
-.site-navigation-link-1 {
-
-
-}
-
-.site-navigation-link-2 {
-
-
-}
-
-.site-navigation-link-3 {
-
-}
-
-.site-navigation-link-4 {
+  text-align: left;
 
 }
 
