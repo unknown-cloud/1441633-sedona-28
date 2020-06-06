@@ -45,7 +45,6 @@ body {
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--light-gray);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -70,6 +69,13 @@ img {
 }
 
 /* Navigation */
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+}
 
 .main-navigation {
   background-color: var(--basic-white);
@@ -79,27 +85,37 @@ img {
 .site-navigation {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 73px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 72px;
   padding-right: 72px;
 }
 
-.main-header-logo {
-  width: 138px;
-  height: 70px;
-  position: absolute;
-  left: 50%;
-  margin-left: -70px;
-}
-
 .site-navigation-link {
-  font-family: var(--font-bold);
+  color: var(--basic-black);
+  font-family: var(--main-font-bold);
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-black);
+  flex-basis: auto;
+  border: 5px solid red;
+  flex-basis: max-content;
+}
+
+.site-navigation-link-1 {
+  align-self: flex-start;
+}
+
+.site-navigation-link-2 {
+  align-self: flex-start;
+}
+
+.site-navigation-link-3 {
+  align-self: flex-end;
+}
+
+.site-navigation-link-4 {
+  align-self: flex-end;
 }
 
 .site-navigation-link:hover {
@@ -130,8 +146,11 @@ img {
 .content {
   width: 1200px;
   margin: 0 auto;
-  background-color: var(--basic-white);
+  background-color: var(--light-gray);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+.description {
+  background-color: var(--basic-white);
 }
 
 /*Base-section*/
@@ -151,19 +170,19 @@ img {
 }
 
 .base-title {
-  font-family: var(--font-bold);
+  font-family: var(--main-font-bold);
   font-size: 21px;
   line-height: 26px;
 }
 
 .features-title {
-  font-family: var(--font-bold);
+  font-family: var(--main-font-bold);
   font-size: 21px;
   line-height: 21px;
 }
 
 .booking-section-title {
-  font-family: var(--font-bold);
+  font-family: var(--main-font-bold);
   font-size: 30px;
   line-height: 24px;
 }
@@ -220,7 +239,7 @@ img {
 }
 
 .filter legend {
-  font-family: var(--font-bold);
+  font-family: var(--main-font-bold);
   font-size: 16px;
   line-height: 21px;
 }
@@ -289,18 +308,12 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
 }
 
 .search-results {
   display: flex;
   background-color: var(--basic-white);
   flex-direction: column;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .hotels-list .hotel-item {
@@ -322,40 +335,37 @@ img {
 }
 
 /*Catalog's buttons*/
-.button-details {
-  font-family: var(--font-bold);
+.button-box {
+  font-family: var(--main-font-bold);
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 17px;
+  padding-left: 16px;
   padding-right: 16px;
   text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-blue);
   border: none;
+
 }
 
-.button-details:hover {
+.details {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.details:hover {
   background-color: var(--deep-blue);
 }
 
-.button-details:active {
+.details:active {
   background-color: var(--dust-blue);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reserve {
-  font-family: var(--font-bold);
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 16px;
-  padding-right: 17px;
-  text-align: center;
-  text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--muddy-gray);
-  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .button-reserve:hover {
@@ -368,23 +378,16 @@ img {
 }
 
 .rating {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 15px;
-  padding-right: 12px;
-  text-align: center;
+  font-family: var(--main-font);
+  padding-left: 14px;
+  padding-right: 14px;
   color: var(--words-gray);
-  text-transform: uppercase;
   background-color: var(--light-gray);
-  border: none;
 }
 
 
 /*Footer*/
 .main-footer {
-  outline: 5px solid rgba(0, 100, 0, 0.7);
-  outline-offset: -5px;
-
   max-height: 120px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -407,7 +410,7 @@ img {
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
 
-  font-family: var(--font-bold);
+  font-family: var(--main-font-bold);
   font-size: 21px;
   margin: 0;
   width: 251px;
@@ -467,5 +470,9 @@ img {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
