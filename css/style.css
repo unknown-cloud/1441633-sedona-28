@@ -14,9 +14,8 @@
 }
 
 :root {
-  --main-font:'PT Sans';
-  --main-font-bold: 'PT Sans Bold';
-  --spare-font: 'Arial';
+  --fonts:'PT Sans', 'Arial', sans-serif;
+  --font-bold:'PT Sans Bold';
 
   --basic-black: #000000;
   --basic-white: #ffffff;
@@ -39,14 +38,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--main-font), var(--spare-font), sans-serif;
+  font-family: var(--fonts);
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
@@ -69,6 +66,10 @@ img {
 }
 
 /* Navigation */
+.main-header {
+  position: relative;
+}
+
 .main-header-logo {
   width: 138px;
   height: 70px;
@@ -97,25 +98,25 @@ img {
   flex-basis: 264px;
 }
 
-.site-navigation-item-1 {
+.site-navigation-item:first-child {
   text-align: left;
 }
 
-.site-navigation-item-2 {
+.site-navigation-item:nth-child(2) {
   text-align: left;
 }
 
-.site-navigation-item-3 {
+.site-navigation-item:nth-child(3) {
   text-align: right;
 }
 
-.site-navigation-item-4 {
+.site-navigation-item:last-child {
   text-align: right;
 }
 
 .site-navigation-link {
   color: var(--basic-black);
-  font-family: var(--main-font-bold);
+  font-family: var(--font-bold);
   font-size: 14px;
   line-height: 26px;
   text-align: left;
@@ -138,13 +139,14 @@ img {
 .logo {
   text-align: center;
   background-image: url("../img/background-photo.jpg");
-  min-height: 509px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
+
 }
 .logo-picture {
   padding-top: 77px;
+  padding-bottom: 81px;
 }
 
 .content {
@@ -170,25 +172,29 @@ img {
 .base-text {
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 0;
+  margin: 0px;
+  padding-top: 25px;
 }
 
 .base-title {
-  font-family: var(--main-font-bold);
+  font-family: var(--font-bold);
   font-size: 21px;
   line-height: 26px;
-  margin-top: 42px;
-  margin-bottom: 33px;
+  padding-top: 42px;
+  padding-bottom: 33px;
+  margin: 0;
 }
 
 .features-title {
-  font-family: var(--main-font-bold);
+  font-family: var(--font-bold);
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+  padding-top: 50px;
 }
 
 .booking-section-title {
-  font-family: var(--main-font-bold);
+  font-family: var(--font-bold);
   font-size: 30px;
   line-height: 24px;
   margin-top: 58px;
@@ -251,7 +257,7 @@ img {
 }
 
 .filter legend {
-  font-family: var(--main-font-bold);
+  font-family: var(--font-bold);
   font-size: 16px;
   line-height: 21px;
 }
@@ -281,10 +287,14 @@ img {
   border-color: var(--basic-white);
   color: var(--basic-black);
 }
+.filter-results {
+  padding-left: 72px; 
+}
 
 .sorting-text {
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
 }
 
 .button-sorting {
@@ -330,8 +340,8 @@ img {
 
 .hotels-list .hotel-item {
   margin: 0;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-left: 72px;
+  padding-right: 72px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--line-light-gray);
@@ -348,7 +358,8 @@ img {
 
 /*Catalog's buttons*/
 .button-box {
-  font-family: var(--main-font-bold);
+  font-size: 14px;
+  line-height: 21px;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -360,6 +371,7 @@ img {
 }
 
 .details {
+  font-family: var(--font-bold);
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -374,10 +386,9 @@ img {
 }
 
 .button-reserve {
+  font-family: var(--font-bold);
   color: var(--basic-white);
   background-color: var(--muddy-gray);
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 
 .button-reserve:hover {
@@ -390,7 +401,6 @@ img {
 }
 
 .rating {
-  font-family: var(--main-font);
   padding-left: 14px;
   padding-right: 14px;
   color: var(--words-gray);
@@ -400,9 +410,8 @@ img {
 
 /*Footer*/
 .main-footer {
-  max-height: 120px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: rgba(255,255,255, 0.9);
   font-size: 14px;
   line-height: 26px;
   margin: 0;
@@ -413,17 +422,20 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+
 }
 
 .footer-main-page {
   margin-top: -120px;
-  opacity: 0.9;
+
 }
 
-.footer-contacts {
-  font-family: var(--main-font-bold);
+.footer-contacts p {
+  font-family: var(--font-bold);
   font-size: 21px;
-  width: 400px;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .footer-contacts a {
@@ -435,14 +447,12 @@ img {
 
   align-self: center;
   text-decoration: none;
-  width: 400px;
 }
 
 .footer-link {
-  width: 400px;
   margin: 0;
-  padding-top: 40px;
-
+  padding-top: 39px;
+  padding-bottom: 41px;
 }
 
 .footer-social a {
@@ -477,13 +487,16 @@ img {
 /*Socai button*/
 
 .social-button {
-
+  padding: 49px;
 }
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
