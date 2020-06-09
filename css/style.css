@@ -361,7 +361,6 @@ img {
 }
 .hotel-item-element {
   padding-left: 29px;
-  align-self: stretch;
   flex-grow: 2;
 }
 
