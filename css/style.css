@@ -163,6 +163,8 @@ img {
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .base-section {
@@ -287,14 +289,29 @@ img {
   border-color: var(--basic-white);
   color: var(--basic-black);
 }
+
+.base-title-search {
+  font-family: var(--font-bold);
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
 .filter-results {
-  padding-left: 72px; 
+  display: flex;
+  flex-direction: row;
+  padding-left: 72px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line-light-gray);
 }
 
 .sorting-text {
   font-size: 12px;
   line-height: 18px;
   margin: 0;
+  padding-left: 40px;
 }
 
 .button-sorting {
@@ -303,11 +320,13 @@ img {
   border: none;
   border-bottom: 1px dotted;
   border-color: var(--basic-blue);
+  margin-left: 32px;
 }
 
 .button-sorting-current {
   color: var(--basic-blue);
   border: none;
+  margin-left: 40px;
 }
 
 .button-sorting-inactive {
@@ -333,9 +352,16 @@ img {
 }
 
 .search-results {
-  display: flex;
   background-color: var(--basic-white);
-  flex-direction: column;
+}
+
+.hotel-item {
+  display: flex;
+  flex-direction: row;
+
+}
+.hotel-item-element {
+  padding-left: 29px;
 }
 
 .hotels-list .hotel-item {
@@ -347,6 +373,11 @@ img {
   border-bottom: 1px solid var(--line-light-gray);
 }
 
+.hotels-list .base-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .hotels-list .base-title:hover {
   color: var(--basic-blue);
 }
@@ -356,10 +387,29 @@ img {
   opacity: 0.3;
 }
 
+.base-text-hotel {
+  margin: 0;
+  padding-bottom: 15px;
+  line-height: normal;
+}
+
+.base-title-hotel {
+  margin: 0;
+  padding-bottom: 7px;
+  line-height: 26px;
+}
+
+.hotell-button {
+  margin: 0;
+}
+.hotell-button:last-child {
+  text-align: left;
+}
+
 /*Catalog's buttons*/
 .button-box {
   font-size: 14px;
-  line-height: 21px;
+  line-height: normal;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -369,6 +419,7 @@ img {
   border: none;
 
 }
+
 
 .details {
   font-family: var(--font-bold);
@@ -405,8 +456,8 @@ img {
   padding-right: 14px;
   color: var(--words-gray);
   background-color: var(--light-gray);
+  margin-left: 522px;
 }
-
 
 /*Footer*/
 .main-footer {
@@ -430,6 +481,12 @@ img {
 
 }
 
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .footer-contacts p {
   font-family: var(--font-bold);
   font-size: 21px;
@@ -442,7 +499,9 @@ img {
   text-decoration: none;
   color: var(--basic-black);
 }
-
+.tel-link {
+  padding-top: 9px;
+}
 .footer-social {
 
   align-self: center;
