@@ -404,7 +404,6 @@ img {
 /*Catalog's buttons*/
 .hotel-button {
   display: flex;
-  margin: auto;
 }
 
 .button-box {
