@@ -38,6 +38,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: var(--font-base);
   font-size: 14px;
   line-height: 21px;
@@ -54,14 +55,20 @@ img {
 }
 
 /*Grid*/
-.page {
-  height: 100%;
-}
-
 .page-body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--light-gray);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+.description {
+  background-color: var(--basic-white);
 }
 
 /* Navigation */
@@ -141,22 +148,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
-
 }
+
 .logo-picture {
   padding-top: 77px;
   padding-bottom: 81px;
 }
 
-.content {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: var(--light-gray);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
-.description {
-  background-color: var(--basic-white);
-}
 
 /*Base-section*/
 
@@ -165,6 +163,51 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.features-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 256px 256px;
+  margin-top: 50px;
+}
+
+.features-list-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 330px;
+  grid-column: 1 / 4;
+}
+.blue-block {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  padding-top: 48px;
+}
+
+.gray-block {
+  background-color: var(--basic-gray);
+  padding-top: 48px;
+}
+
+.grid-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px;
+  grid-column: 1 / 4;
+}
+.grid-feature-element-blue-block {
+  grid-column: 3 / 4;
+
+}
+.feature-photo-1 {
+  grid-column: 2 / 4;
+  margin: auto;
+}
+.feature-photo-2 {
+  margin: auto;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
 
 .base-section {
   text-align: center;
@@ -182,7 +225,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   padding-top: 42px;
-  padding-bottom: 33px;
+  padding-bottom: 25px;
   margin: 0;
 }
 
@@ -191,7 +234,10 @@ img {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
-  padding-top: 50px;
+}
+
+.features-item {
+  padding-top: 60px;
 }
 
 .booking-section-title {
@@ -199,20 +245,12 @@ img {
   font-size: 30px;
   line-height: 24px;
   margin-top: 58px;
-}
-
-.blue-block {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-
-.gray-block {
-  background-color: var(--basic-grey);
+  margin-bottom: 8px;
 }
 
 /*Popup*/
 .button-search-hotel {
-  margin-top: 56px;
+  margin-top: 51px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 124px;
@@ -247,6 +285,10 @@ img {
 
  /* Filter*/
 .filter {
+  display: grid;
+  grid-template-columns: 300px 300px 1fr;
+  grid-template-rows: 216px;
+
   color: var(--basic-white);
   background-image: url("../img/background-photo.jpg");
   background-color: var(--basic-blue);
@@ -254,27 +296,53 @@ img {
   background-repeat: no-repeat;
 }
 .filter fieldset {
-    border: none;
+  border: none;
+  padding: 0;
+  margin-top: 26px;
+  margin-bottom: 32px;
+}
+
+.filter-buildings {
+  margin-left: 72px;
+}
+
+.filter-houses {
+  margin-left: 24px;
+}
+
+.filter-price {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.filter-price li{
+  padding-bottom: 0;
+  line-height: 21px;
 }
 
 .filter legend {
   font-family: var(--font-bold);
   font-size: 16px;
-  line-height: 21px;
+  line-height: 26px;
 }
 
 .filter ul {
   list-style: none;
   font-size: 14px;
-  line-height: 21px;
-  align-items: center;
+  line-height: 46px;
+  padding: 0;
 }
 
 .filter-button {
   border: 2px solid;
+  border-radius: 2px;
   border-color: var(--basic-white);
   width: 137px;
   height: 36px;
+  margin-left: 94px;
+  margin-top: 26px;
+  margin-bottom: 32px;
+  margin-right: 166px;
   text-transform: uppercase;
   color: var(--basic-white);
   font-size: 14px;
@@ -303,6 +371,7 @@ img {
   flex-direction: row;
   padding-left: 72px;
   align-items: baseline;
+  background-color: var(--basic-white);
   border-bottom: 1px solid var(--line-light-gray);
 }
 
@@ -391,7 +460,6 @@ img {
   display: flex;
   margin: auto;
   padding-bottom: 16px;
-  line-height: normal;
 }
 
 .base-title-hotel {
@@ -404,6 +472,7 @@ img {
 /*Catalog's buttons*/
 .hotel-button {
   display: flex;
+  margin: auto;
 }
 
 .button-box {

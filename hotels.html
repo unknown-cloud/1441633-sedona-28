@@ -29,7 +29,7 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter">
-            <fieldset>
+            <fieldset class="filter-buildings">
               <legend>Инфраструктура:</legend>
               <ul>
                 <li>
@@ -46,8 +46,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Тип жилья</legend>
+            <fieldset class="filter-houses">
+              <legend>Тип жилья:</legend>
               <ul>
                 <li>
                   <input type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
@@ -63,7 +63,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-price">
               <legend>Стоимость в сутки (Р):</legend>
               <ul>
                 <li>
@@ -74,8 +74,9 @@
                   <input type="range" id="filter-price" name="price-range" min="0" max="3000">
                 </li>
               </ul>
+              <button type="submit" class="filter-button">Показать</button>
             </fieldset>
-            <button type="submit" class="filter-button">Показать</button>
+
           </div>
 
           <div class="filter-results">
