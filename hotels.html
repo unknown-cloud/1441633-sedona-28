@@ -29,54 +29,61 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter">
-            <fieldset class="filter-buildings">
-              <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" name="facilities" value="pools" id="filter-pools" checked>
-                  <label for="filter-pools">Бассейн</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="facilities" value="parking" id="filter-parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="facilities" value="wi-fi" id="filter-wi-fi">
-                  <label for="filter-wi-fi">Wi-fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-houses">
-              <legend>Тип жилья:</legend>
-              <ul>
-                <li>
-                  <input type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="housing" value="motel" id="filter-motel" checked>
-                  <label for="filter-motel">Мотель</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="housing" value="apartments" id="filter-apartments" checked>
-                  <label for="filter-apartments">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filter-price">
-              <legend>Стоимость в сутки (Р):</legend>
-              <ul>
-                <li>
-                  <label>от<input type="text" name="price-min" value="0"></label>
-                  <label>до<input type="text" name="price-max" value="3000"></label>
-                </li>
-                <li>
-                  <input type="range" id="filter-price" name="price-range" min="0" max="3000">
-                </li>
-              </ul>
-              <button type="submit" class="filter-button">Показать</button>
-            </fieldset>
-
+            <div class="filter-buildings">
+              <fieldset>
+                <legend>Инфраструктура:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="facilities" value="pools" id="filter-pools" checked>
+                    <label for="filter-pools">Бассейн</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="facilities" value="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="facilities" value="wi-fi" id="filter-wi-fi">
+                    <label for="filter-wi-fi">Wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div>
+              <fieldset class="filter-houses">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="housing" value="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="housing" value="apartments" id="filter-apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter-price">
+              <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                <ul>
+                  <li>
+                    <label>от<input type="text" name="price-min" value="0"></label>
+                    <label>до<input type="text" name="price-max" value="3000"></label>
+                  </li>
+                  <li>
+                    <input type="range" id="filter-price" name="price-range" min="0" max="3000">
+                  </li>
+                </ul>
+              </fieldset>
+              <div>
+                <button type="submit" class="filter-button">Показать</button>
+              </div>
+            </div>
           </div>
 
           <div class="filter-results">
