@@ -173,7 +173,7 @@ img {
 .features-list-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 330px;
+
   grid-column: 1 / 4;
 }
 .blue-block {
@@ -181,16 +181,16 @@ img {
   color: var(--basic-white);
   padding-top: 50px;
   padding-bottom: 54px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .gray-block {
   background-color: var(--basic-gray);
   padding-top: 50px;
   padding-bottom: 54px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 70px;
 }
 
 .grid-feature {
@@ -306,22 +306,24 @@ img {
 .filter fieldset {
   border: none;
   padding: 0;
-  margin-top: 26px;
-  margin-bottom: 32px;
+  margin: 0;
+}
+
+.filter legend {
+  padding-top: 26px;
 }
 
 .filter-buildings {
   margin-left: 72px;
-  margin-right: auto;
 }
 
 .filter-houses {
   margin-left: 47px;
-  margin-right: auto;
 }
 
 .filter-price {
   margin-left: auto;
+  margin-right: 72px;
 }
 
 .filter-price li{
@@ -342,16 +344,17 @@ img {
   padding: 0;
 }
 
-.filter-button {
+.button-show {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  margin-bottom: 32px;
   border: 2px solid;
   border-radius: 2px;
   border-color: var(--basic-white);
   width: 137px;
   height: 36px;
-  margin-left: 94px;
-  margin-top: 26px;
-  margin-bottom: 32px;
-  margin-right: 166px;
   text-transform: uppercase;
   color: var(--basic-white);
   font-size: 14px;
@@ -359,7 +362,7 @@ img {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.filter-button:hover {
+.button-show:hover {
   background-color: var(--basic-white);
   border: 2px solid;
   border-color: var(--basic-white);
