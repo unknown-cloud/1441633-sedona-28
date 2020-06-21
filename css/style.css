@@ -627,16 +627,37 @@ img {
   line-height: 26px;
 }
 
-.rating-star::before {
+.rating-star-1::before {
   content: "";
   position: absolute;
-  width: 18px;
+  width: 84px;
   height: 18px;
   background-image: url("../img/star.svg");
-  background-repeat: no-repeat;
-  left: 98%;
+  background-repeat: space;
+  left: 91%;
+  padding-left: 5px;
+}
+.rating-star-2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 18px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  left: 93%;
+  padding-left: 5px;
 }
 
+.rating-star-3::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  left: 95.5%;
+  padding-left: 5px;
+}
 /*Catalog's buttons*/
 .hotel-button {
   display: flex;
