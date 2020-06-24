@@ -149,9 +149,12 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  background-image: url("../img/background-photo.jpg");
+  background-color: var(--dust-blue);
+  background-image: url("../img/white-peaks.svg"),
+                    url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom, center;
+  background-size: auto, cover;
   margin: 0;
 }
 
@@ -232,16 +235,18 @@ img {
   font-size: 14px;
   line-height: 21px;
   margin: 0px;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .base-title {
   font-family: var(--font-bold);
   font-size: 21px;
   line-height: 26px;
-  padding-top: 42px;
-  padding-bottom: 25px;
   margin: 0;
+  padding: 0;
+  margin-top: 42px;
+  margin-bottom: 42px;
+
 }
 
 .features-title {
@@ -249,6 +254,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
+  padding: 0;
 
 }
 
@@ -265,7 +271,7 @@ img {
   font-size: 30px;
   line-height: 24px;
   margin-top: 58px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 /*Popup*/
@@ -534,7 +540,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   margin: 0;
-  padding-left: 40px;
+  margin-left: 40px;
 }
 
 .button-sorting {
@@ -543,6 +549,7 @@ img {
   border: none;
   border-bottom: 1px dotted;
   border-color: var(--basic-blue);
+  padding: 0;
   margin-left: 32px;
 }
 
@@ -581,12 +588,14 @@ img {
 .hotel-item {
   display: flex;
   flex-direction: row;
-
 }
-.hotel-item-element {
-  position: relative;
 
-  padding-left: 29px;
+.hotel-item-image{
+  margin-top: 6px;
+}
+
+.hotel-item-element {
+  margin-left: 30px;
   flex-grow: 2;
 }
 
@@ -594,8 +603,8 @@ img {
   margin: 0;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--line-light-gray);
 }
 
@@ -613,59 +622,55 @@ img {
   opacity: 0.3;
 }
 
-.base-text-hotel {
-  display: inline-block;
-  padding-right: 18px;
-  margin: auto;
-  padding-bottom: 16px;
-}
-
-.base-text-hotel-price-1 {
-  padding-left: 16px;
-}
-
-.base-text-hotel-price-2 {
-  padding-left: 42px;
-}
-
 .base-title-hotel {
-  display: flex;
   font-family: var(--font-bold);
   margin: auto;
-  padding-bottom: 7px;
   line-height: 26px;
+  color: var(--basic-black);
+}
+
+.base-text-hotel {
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 6px;
+  margin-bottom: 16px;
+  width: 108px;
+}
+
+.rating {
+  color: var(--words-gray);
+  background-color: var(--light-gray);
+  margin-left: auto;
+  margin-top: 70px;
 }
 
 .rating-star-1::before {
   content: "";
   position: absolute;
-  width: 84px;
+  width: 88px;
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
-  left: 91%;
-  padding-left: 5px;
+  margin-left: 30px;
 }
 .rating-star-2::before {
   content: "";
   position: absolute;
-  width: 60px;
+  width: 64px;
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
-  left: 93%;
-  padding-left: 5px;
+  margin-left: 54px;
 }
 
 .rating-star-3::before {
   content: "";
   position: absolute;
-  width: 36px;
+  width: 42px;
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
-  left: 95.5%;
-  padding-left: 5px;
+  margin-left: 74px;
 }
 /*Catalog's buttons*/
 .hotel-button {
@@ -675,7 +680,6 @@ img {
 
 .button-box {
   font-size: 14px;
-  line-height: normal;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
@@ -717,13 +721,6 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.rating {
-  padding-left: 14px;
-  padding-right: 14px;
-  color: var(--words-gray);
-  background-color: var(--light-gray);
-  margin-left: auto;
-}
 
 /*Footer*/
 .main-footer {
@@ -758,8 +755,8 @@ img {
   font-family: var(--font-bold);
   font-size: 21px;
   margin: 0;
-  padding-top: 23px;
-  padding-bottom: 36px;
+  margin-top: 23px;
+  margin-bottom: 36px;
 }
 
 .footer-contacts a {
@@ -767,7 +764,7 @@ img {
   color: var(--basic-black);
 }
 .tel-link {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-social {
 
@@ -777,8 +774,8 @@ img {
 
 .footer-link {
   margin: 0;
-  padding-top: 39px;
-  padding-bottom: 41px;
+  margin-top: 39px;
+  margin-bottom: 41px;
 }
 
 .footer-social a {
@@ -799,13 +796,12 @@ img {
 .footer-link-academy {
   font-size: 14px;
   line-height: 26px;
-  padding-right: 8px;
+  margin-right: 8px;
   color: var(--basic-black);
 }
 
 .footer-link-academy-logo {
   vertical-align: middle;
-  text-decoration: none;
 }
 
 .icon-academy:hover path {
