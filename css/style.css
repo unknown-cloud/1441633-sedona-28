@@ -308,7 +308,7 @@ img {
 .popup {
   position: absolute;
   width: 568px;
-  left: 316px;
+  right: 316px;
   background: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -317,7 +317,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 55px;
+  padding: 55px;
 }
 
 .visit-item {
@@ -374,8 +374,7 @@ img {
   position: absolute;
   background-image: url("../img/icon-calendar.svg");
   background-repeat: no-repeat;
-  left: 93.5%;
-  top: 15%;
+  transform: translate(428px,6px);
 }
 
 .switch-adults-increase::before {
@@ -385,8 +384,9 @@ img {
   position: absolute;
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
-  left: 89%;
-  top: 36%;
+  left: 92%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .switch-children-increase::before {
@@ -396,8 +396,9 @@ img {
   position: absolute;
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
-  left: 85%;
-  top: 36%;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .switch-adults-reduce::before {
@@ -407,19 +408,21 @@ img {
   position: absolute;
   background-image: url("../img/icon-minus.svg");
   background-repeat: no-repeat;
-  left: 57%;
-  top: 48%;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .switch-children-reduce::before {
   content: "";
   width: 12px;
-  height: 12px;
+  height: 4px;
   position: absolute;
   background-image: url("../img/icon-minus.svg");
   background-repeat: no-repeat;
-  left: 44%;
-  top: 44%;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .visit-item-2 input[type=number]::-webkit-inner-spin-button,
