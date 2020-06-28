@@ -98,18 +98,26 @@
               <p class="visit-item visit-item-1">
                 <label for="arrival-date" class="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" name="date" value="24 апреля 2017">
+                <button class="calendar-button" type="button"><span class="visually-hidden">Календарь</span></button>
               </p>
               <p class="visit-item visit-item-1">
                 <label for="departure-date" class="departure-date">Дата выезда:</label>
                 <input id="departure-date" type="text" name="date" value="4 июля 2017">
+                <button class="calendar-button" type="button"><span class="visually-hidden">Календарь</span></button>
               </p>
-              <p class="visit-item visit-item-2 switch-adults-increase">
-                <label for="adults" class="adults visit-item-plus-1 switch-adults-reduce">Взрослые:</label>
+              <p class="visit-item visit-item-2">
+                <label for="adults" class="adults">Взрослые:</label>
+                <button class="reduce-button" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
                 <input id="adults" type="number" name="number" value="2">
+                <button class="increase-button" type="button"><span class="visually-hidden">Увеличить количество</span></button>
               </p>
-              <p class="visit-item visit-item-2 switch-children-increase">
-                <label for="children" class="children visit-item-plus-2 switch-children-reduce">Дети:</label>
+              <p class="visit-item visit-item-2">
+                <label for="children" class="children">Дети:</label>
+
+                <button class="reduce-button" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
                 <input id="children" type="number" name="number" value="0">
+                <button class="increase-button" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+
               </p>
 
               <button class="button" type="submit">Найти</button>
