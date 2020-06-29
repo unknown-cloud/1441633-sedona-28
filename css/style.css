@@ -314,12 +314,12 @@ img {
 }
 
 .visit-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding: 55px;
 }
-
+.visit-form-number-of-people {
+  display: flex;
+  justify-content: space-between;
+}
 .visit-item {
   position: relative;
   margin: 0;
@@ -329,6 +329,9 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+.visit-item-2 {
+  display: flex;
 }
 
 .visit-item input {
@@ -344,12 +347,12 @@ img {
 .visit-item-1 input {
   width: 346px;
   padding-left: 13px;
+  padding-right: 40px;
 }
 .visit-item-2 input {
   text-align: center;
-  width: 114px;
-  padding-left: 39px;
-  padding-right: 39px;
+  width: 38px;
+  padding: 0;
 }
 
 .arrival-date {
@@ -374,30 +377,33 @@ img {
   position: absolute;
   background-image: url("../img/icon-calendar.svg");
   background-repeat: no-repeat;
+  padding: 0;
   right: 10px;
   top: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .reduce-button {
   width: 38px;
   height: 38px;
-  position: absolute;
+  padding: 0;
   background-image: url("../img/icon-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  cursor: pointer;
 }
 
 .increase-button {
   width: 38px;
   height: 38px;
-  position: absolute;
+  padding: 0;
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  right: 0;
+  cursor: pointer;
 }
 
 .visit-item-2 input[type=number]::-webkit-inner-spin-button,
@@ -425,7 +431,7 @@ img {
   display: grid;
   grid-template-columns: 300px 300px 1fr;
   color: var(--basic-white);
-  background-image: url("../img/background-photo.jpg");
+  background-image: url("../img/background-filter-hotels.jpg");
   background-color: var(--basic-blue);
   background-position: center;
   background-repeat: no-repeat;
@@ -468,9 +474,52 @@ img {
   list-style: none;
   font-size: 14px;
   line-height: 46px;
-  padding: 0;
+}
+.filter-option label {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--basic-white);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.filter-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -38px;
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.min-price input {
+  background-color: transparent;
+  width: 159px;
+  height: 36px;
+  color: var(--basic-white);
+  text-align: center;
+  border: 2px solid var(--basic-white);
+}
+.max-price input {
+  background-color: transparent;
+  width: 159px;
+  height: 36px;
+  color: var(--basic-white);
+  text-align: center;
+  border: 2px solid var(--basic-white);
+}
 .button-show {
   display: block;
   margin-left: auto;
