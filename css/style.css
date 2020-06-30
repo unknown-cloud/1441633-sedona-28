@@ -258,6 +258,9 @@ img {
   padding: 0;
 
 }
+.features-title-house {
+  padding-bottom: 30px;
+}
 
 .features-item {
   padding-top: 60px;
@@ -361,8 +364,25 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
 }
+
+.visit-item input {
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--light-gray);
+  border: none;
+  box-sizing: border-box;
+  font: inherit;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .visit-item-1 {
   display: flex;
+}
+
+.visit-item-1 input {
+  width: 308px;
+  padding-left: 13px;
 }
 
 .visit-item-1 input:focus {
@@ -373,7 +393,9 @@ img {
   padding-bottom: 4px;
   padding-left: 11px;
   padding-right: 38px;
+  vertical-align: middle;
 }
+
 .visit-item-1 input:hover {
   background-color: var(--gray-for-input);
 }
@@ -382,20 +404,6 @@ img {
   display: flex;
 }
 
-.visit-item input {
-  text-transform: uppercase;
-  background-color: var(--light-gray);
-  border: none;
-  box-sizing: border-box;
-  font: inherit;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.visit-item-1 input {
-  width: 308px;
-  padding-left: 13px;
-}
 .visit-item-2 input {
   text-align: center;
   width: 38px;
@@ -403,68 +411,105 @@ img {
 }
 
 .arrival-date {
-  margin-right: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .departure-date {
-  margin-right: 16px;
+  padding-right: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .adults {
-  margin-right: 38px;
+  padding-right: 38px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .children {
-  margin-right: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .calendar-button {
   width: 38px;
   height: 38px;
-  background-image: url("../img/icon-calendar.svg");
   background-color: var(--light-gray);
-  background-repeat: no-repeat;
-  background-position: center;
   padding: 0;
   border: none;
   cursor: pointer;
 }
-/*
-.calendar-button:hover path {
-  background-image: var(--basic-black);
+
+.visit-icon-minus {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
-.calendar-button:active path {
+.visit-icon-plus {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.visit-icons:hover path {
+  fill: var(--basic-black);
+  outline: 0;
+}
+
+.visit-icons:active path {
   fill: var(--basic-blue);
-}*/
+  outline: 0;
+}
+
+.visit-icons:hover rect {
+  fill: var(--basic-black);
+  outline: 0;
+}
+
+.visit-icons:active rect {
+  fill: var(--basic-blue);
+  outline: 0;
+}
 
 .reduce-button {
   width: 38px;
   height: 38px;
   padding: 0;
-  background-image: url("../img/icon-minus.svg");
   background-color: var(--light-gray);
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
   cursor: pointer;
 }
-
-.reduce-button:active {
-    background-image: var(--basic-blue);
+/*
+.visit-icons:hover path {
+  fill: var(--basic-black);
 }
+
+.reduce-icon:active path {
+  fill: var(--basic-blue);
+}*/
 
 .increase-button {
   width: 38px;
   height: 38px;
   padding: 0;
-  background-image: url("../img/icon-plus.svg");
   background-color: var(--light-gray);
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
   cursor: pointer;
 }
+/*
+.increase-icon:hover path{
+  fill: var(--basic-black);
+}
+
+.increase-icon:active path{
+  fill: var(--basic-blue);
+}*/
 
 .visit-item-2 input[type=number]::-webkit-inner-spin-button,
 .visit-item-2 input[type=number]::-webkit-outer-spin-button {
@@ -550,6 +595,54 @@ img {
   background-repeat: no-repeat;
 }
 
+/*range-filter*/
+
+.range-filter {
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+.scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.controler {
+  position: relative;
+}
+
+.price-control {
+  margin-bottom: 20px;
+}
+
+.controler .scale-bar {
+  width: 80%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.controler .toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.controler .toggle-min {
+  left: 280px;
+}
+
+.controler .toggle-max {
+  left: 0;
+}
+
+
 .min-price input {
   background-color: transparent;
   width: 159px;
@@ -570,8 +663,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 26px;
-  margin-bottom: 32px;
   border: 2px solid;
   border-radius: 2px;
   border-color: var(--basic-white);
@@ -723,7 +814,7 @@ img {
   position: relative;
 }
 
-.rating-star-1::before {
+.rating-star-1:: {
   content: "";
   position: absolute;
   width: 88px;
