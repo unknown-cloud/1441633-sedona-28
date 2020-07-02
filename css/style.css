@@ -32,6 +32,7 @@
   --light-gray: #F2F2F2;
   --line-light-gray: #E5E5E5;
   --gray-for-input: #EBEBEB;
+  --toggle-gray: #ABABAB;
 
 }
 
@@ -258,7 +259,7 @@ img {
   padding: 0;
 
 }
-.features-title-house {
+.features-title-icon {
   padding-bottom: 30px;
 }
 
@@ -485,14 +486,6 @@ img {
   border: none;
   cursor: pointer;
 }
-/*
-.visit-icons:hover path {
-  fill: var(--basic-black);
-}
-
-.reduce-icon:active path {
-  fill: var(--basic-blue);
-}*/
 
 .increase-button {
   width: 38px;
@@ -502,14 +495,6 @@ img {
   border: none;
   cursor: pointer;
 }
-/*
-.increase-icon:hover path{
-  fill: var(--basic-black);
-}
-
-.increase-icon:active path{
-  fill: var(--basic-blue);
-}*/
 
 .visit-item-2 input[type=number]::-webkit-inner-spin-button,
 .visit-item-2 input[type=number]::-webkit-outer-spin-button {
@@ -526,28 +511,30 @@ img {
   background-color: var(--basic-blue);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .filter fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.filter legend {
-  padding-top: 26px;
-}
-
 .filter-buildings {
   margin-left: 72px;
+  margin-top: 26px;
 }
 
 .filter-houses {
   margin-left: 47px;
+  margin-top: 26px;
 }
 
 .filter-price {
   margin-left: auto;
   margin-right: 72px;
+  margin-top: 26px;
+  margin-bottom: 32px;
 }
 
 .filter-price li{
@@ -559,13 +546,16 @@ img {
   font-family: var(--font-bold);
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .filter ul {
   list-style: none;
   font-size: 14px;
   line-height: 46px;
+  margin: auto;
 }
+
 .filter-option label {
   position: relative;
   cursor: pointer;
@@ -577,20 +567,32 @@ img {
   position: absolute;
   left: -38px;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   border: 2px solid var(--basic-white);
-  cursor: pointer;
   border-radius: 3px;
+  cursor: pointer;
 }
 
-.filter-checkbox:checked + label::after {
+.filter-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 1px;
+  display: none;
   left: -38px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.filter-checkbox-on:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 0;
   width: 26px;
-  height: 23px;
+  height: 26px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
@@ -613,8 +615,65 @@ img {
 
 .price-control {
   margin-bottom: 20px;
+  position: relative;
 }
 
+.line {
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
+  top: 6px;
+  right: 160px;
+}
+
+.price {
+
+}
+
+.price input {
+  background-color: transparent;
+  width: 58px;
+  height: 30px;
+  color: var(--basic-white);
+  text-align: center;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.price input[type=number]::-webkit-inner-spin-button,
+.price input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-higher-number {
+  margin-left: -6px;
+}
+
+.min-price input {
+  border-right: none;
+  border-right: 15px;
+}
+
+.max-price input {
+  border-left: none;
+}
+
+.price-range {
+  position: absolute;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.price-range-min {
+  padding-left: 50px;
+}
+
+.price-range-max {
+  padding-left: 30px;
+}
 .controler .scale-bar {
   width: 80%;
   height: 2px;
@@ -628,37 +687,20 @@ img {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--toggle-gray);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
   cursor: pointer;
 }
 
 .controler .toggle-min {
-  left: 280px;
+  left: 250px;
 }
 
 .controler .toggle-max {
   left: 0;
 }
 
-
-.min-price input {
-  background-color: transparent;
-  width: 159px;
-  height: 36px;
-  color: var(--basic-white);
-  text-align: center;
-  border: 2px solid var(--basic-white);
-}
-.max-price input {
-  background-color: transparent;
-  width: 159px;
-  height: 36px;
-  color: var(--basic-white);
-  text-align: center;
-  border: 2px solid var(--basic-white);
-}
 .button-show {
   display: block;
   margin-left: auto;
@@ -691,8 +733,6 @@ img {
   font-family: var(--font-bold);
   font-size: 21px;
   line-height: 26px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin: 0;
 }
 
@@ -700,6 +740,9 @@ img {
   display: flex;
   flex-direction: row;
   padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: baseline;
   background-color: var(--basic-white);
   border-bottom: 1px solid var(--line-light-gray);
@@ -742,6 +785,41 @@ img {
   opacity: 1;
   border: none;
   outline: 0;
+}
+
+.sorting-buttons-group {
+  margin: 0;
+  margin-left: auto;
+}
+
+.sorting-button {
+  border: none;
+  background-color: var(--basic-white);
+}
+
+.sorting-buttons-triangle {
+  width: 12px;
+  height: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.sorting-buttons-2 {
+  transform: rotate(-180deg);
+}
+
+.sorting-buttons-triangle:hover path{
+  fill: var(--basic-black);
+  outline: 0;
+}
+
+.sorting-buttons-triangle:active path {
+  fill: var(--basic-blue);
+  outline: 0;
+}
+
+.sorting-buttons-triangle-curent path {
+  fill: var(--basic-blue);
 }
 
 /*Catalog*/
@@ -810,11 +888,11 @@ img {
   margin-top: 70px;
 }
 
-.rating-star{
+.rating-star {
   position: relative;
 }
 
-.rating-star-1:: {
+.rating-star-1::before {
   content: "";
   position: absolute;
   width: 88px;
@@ -999,9 +1077,7 @@ img {
   background-color: var(--basic-blue);
 
 }
-.social-icon {
-  padding: 16px;
-}
+
 .social-button:hover {
   background-color: var(--deep-blue);
 }

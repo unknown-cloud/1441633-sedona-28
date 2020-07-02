@@ -33,35 +33,35 @@
               <fieldset>
                 <legend>Инфраструктура:</legend>
                 <ul>
-                  <li>
-                    <input type="checkbox" name="facilities" value="pools" id="filter-pools" checked>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="facilities" value="pools" id="filter-pools" checked>
                     <label for="filter-pools">Бассейн</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="facilities" value="parking" id="filter-parking">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="facilities" value="parking" id="filter-parking">
                     <label for="filter-parking">Парковка</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="facilities" value="wi-fi" id="filter-wi-fi">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="facilities" value="wi-fi" id="filter-wi-fi">
                     <label for="filter-wi-fi">Wi-fi</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <div>
-              <fieldset class="filter-houses">
+            <div class="filter-houses">
+              <fieldset>
                 <legend>Тип жилья:</legend>
                 <ul>
-                  <li>
-                    <input type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="housing" value="hotel" id="filter-hotel" checked>
                     <label for="filter-hotel">Гостиница</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="housing" value="motel" id="filter-motel" checked>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="housing" value="motel" id="filter-motel" checked>
                     <label for="filter-motel">Мотель</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="housing" value="apartments" id="filter-apartments" checked>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox filter-checkbox-on" type="checkbox" name="housing" value="apartments" id="filter-apartments" checked>
                     <label for="filter-apartments">Апартаменты</label>
                   </li>
                 </ul>
@@ -70,26 +70,45 @@
             <div class="filter-price">
               <fieldset>
                 <legend>Стоимость в сутки (Р):</legend>
-                <ul>
-                  <li>
-                    <label>от<input type="text" name="price-min" value="0"></label>
-                    <label>до<input type="text" name="price-max" value="3000"></label>
-                  </li>
-                  <li>
-                    <input type="range" id="filter-price" name="price-range" min="0" max="3000">
-                  </li>
-                </ul>
+                <div class="range-filter">
+                  <div class="price-control">
+                    <label class="price min-price"><span class="price-range price-range-min">от</span><input type="number" name="min-price" value="0"></label>
+                    <div class="line"></div>
+                    <label class="price max-price"><span class="price-range price-range-max">до</span><input class="price-higher-number" type="number" name="max-price" value="3000"></label>
+                  </div>
+                  <div class="controler">
+                    <div class="scale">
+                      <div class="scale-bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                </div>
               </fieldset>
               <button type="submit" class="button-show">Показать</button>
             </div>
           </div>
 
-          <div class="filter-results">
+          <div class="filter-results sorting-buttons">
             <h2 class="base-title-search">Найдено: 3</h2>
             <p class="sorting-text">Сортировка:
               <button type="button" class="button-sorting button-sorting-current">по цене</button>
               <button type="button" class="button-sorting button-sorting-inactive">по типу</button>
               <button type="button" class="button-sorting button-sorting-inactive">по рейтингу</button>
+            </p>
+            <p class="sorting-buttons-group">
+              <button type="button" class="sorting-button">
+                <svg  class="sorting-buttons-triangle sorting-buttons-1" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                </svg>
+                <span class="visually-hidden">Сортировка по возрастанию</span>
+              </button>
+              <button type="button" class="sorting-button">
+                <svg class="sorting-buttons-triangle sorting-buttons-2 sorting-buttons-triangle-curent" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                </svg>
+                <span class="visually-hidden">Сортировка по убыванию</span>
+              </button>
             </p>
           </div>
         </form>
@@ -185,7 +204,7 @@
           <h2 class="visually-hidden">Соцсети</h2>
           <ul>
             <li>
-              <a href="" class="social-button">
+              <a href="" class="social-button social-button-twitter">
                 <span class="visually-hidden">Наш а страница в Твиттер</span>
                 <svg class="social-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14403C12.635 0.648028 13.934 1.41403 14.527 2.32303C15.2 2.09203 15.858 1.84203 16.538 1.61503C16.5249 2.30139 16.2117 2.94755 15.681 3.38303C16.366 3.55303 16.985 2.89203 16.985 2.89203C16.816 3.89203 15.979 4.68003 15.422 4.91603C15.191 11.666 12.247 16.133 5.34498 15.998H4.89898C4.48898 15.998 0.734977 15.538 0.000976562 14.111C2.27198 14.307 3.89398 13.689 4.69398 12.934C3.73398 12.634 2.01498 12.457 1.71498 9.98403C2.06398 10.09 2.27898 10.212 2.90498 10.103C1.70498 9.24703 0.373977 8.53003 0.447977 6.33003C0.732977 6.65803 1.51498 6.86603 1.78798 6.80203C1.08498 6.56103 -0.182023 3.44203 0.893977 1.85003C2.71198 3.70403 4.62898 5.45603 8.04598 5.62303C8.25398 3.33003 9.18298 1.79303 10.95 1.14403Z" fill="white"/>
@@ -193,7 +212,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="social-button">
+              <a href="" class="social-button social-button-facebook">
                 <span class="visually-hidden">Наша группа в Фейсбук</span>
                 <svg  class="social-icon" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
@@ -201,7 +220,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="social-button">
+              <a href="" class="social-button social-button-youtube">
                 <span class="visually-hidden">Наш кана на YouTube</span>
                 <svg  class="social-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
