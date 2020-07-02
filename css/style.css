@@ -693,12 +693,18 @@ img {
   cursor: pointer;
 }
 
+
+.controler .toggle:hover {
+  width: 5px;
+  height: 5px;
+}
+
 .controler .toggle-min {
-  left: 250px;
+  left: 0px;
 }
 
 .controler .toggle-max {
-  left: 0;
+  left: 250px;
 }
 
 .button-show {
