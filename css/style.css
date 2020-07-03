@@ -105,7 +105,7 @@ img {
 }
 
 .site-navigation-item {
-  flex-basis: 264px;
+  flex-basis: 228px;
 }
 
 .site-navigation-item:first-child {
@@ -132,6 +132,13 @@ img {
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
+<<<<<<< HEAD
+=======
+}
+
+.site-navigation-link-right {
+  text-align: right;
+>>>>>>> fbf809a7eae5bf27a0ede0abbac3ee80fcacb964
 }
 
 .site-navigation-link:hover {
