@@ -33,6 +33,7 @@
   --line-light-gray: #E5E5E5;
   --gray-for-input: #EBEBEB;
   --toggle-gray: #ABABAB;
+  --locked-gray:#6A6A6A;
 
 }
 
@@ -131,7 +132,6 @@ img {
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
-
 }
 
 .site-navigation-link:hover {
@@ -151,7 +151,7 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  background-color: var(--dust-blue);
+  background-color: var(--basic-white);
   background-image: url("../img/white-peaks.svg"),
                     url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -607,10 +607,15 @@ img {
   border-radius: 3px;
   cursor: pointer;
 }
-
-.filter-checkbox-on input path:disabled {
-  color: black;
+/*
+.filter-checkbox-on path:disabled {
+  fill: var(--locked-gray);
 }
+
+.filter-checkbox + label:disabled {
+  color: var(--locked-gray);
+}*/
+
 /*range-filter*/
 
 .range-filter {
