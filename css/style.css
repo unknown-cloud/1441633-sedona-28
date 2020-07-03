@@ -565,8 +565,8 @@ img {
 .filter-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -38px;
-  top: 0;
+  left: -40px;
+  top: -3px;
   width: 19px;
   height: 19px;
   border: 2px solid var(--basic-white);
@@ -578,25 +578,39 @@ img {
   content: "";
   position: absolute;
   display: none;
-  left: -38px;
-  top: 0;
-  width: 19px;
-  height: 19px;
-  border: 5px solid black;
+  left: -40px;
+  top: -3px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
 .filter-checkbox-on:checked + label::after {
   content: "";
   position: absolute;
-  left: -38px;
-  top: 0;
+  left: -40px;
+  top: -3px;
   width: 26px;
   height: 26px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
+.filter-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -3px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-white);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-checkbox-on input path:disabled {
+  color: black;
+}
 /*range-filter*/
 
 .range-filter {
@@ -614,8 +628,38 @@ img {
 }
 
 .price-control {
+  display: flex;
+  width: 316px;
   margin-bottom: 20px;
   position: relative;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+
+.min-start {
+  margin-left: auto;
+}
+.max-start {
+  margin-left: auto;
+}
+
+.price input {
+  background-color: transparent;
+  width: 80px;
+  height: 30px;
+  color: var(--basic-white);
+  text-align: left;
+  border: none;
+}
+
+.price input:active, :focus {
+  outline: none;
+}
+
+.price input[type=number]::-webkit-inner-spin-button,
+.price input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .line {
@@ -627,53 +671,6 @@ img {
   right: 160px;
 }
 
-.price {
-
-}
-
-.price input {
-  background-color: transparent;
-  width: 58px;
-  height: 30px;
-  color: var(--basic-white);
-  text-align: center;
-  border: 2px solid var(--basic-white);
-  border-radius: 2px;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-.price input[type=number]::-webkit-inner-spin-button,
-.price input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.price-higher-number {
-  margin-left: -6px;
-}
-
-.min-price input {
-  border-right: none;
-  border-right: 15px;
-}
-
-.max-price input {
-  border-left: none;
-}
-
-.price-range {
-  position: absolute;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.price-range-min {
-  padding-left: 50px;
-}
-
-.price-range-max {
-  padding-left: 30px;
-}
 .controler .scale-bar {
   width: 80%;
   height: 2px;
