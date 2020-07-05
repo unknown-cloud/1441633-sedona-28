@@ -37,7 +37,6 @@
 
 }
 
-/* Global */
 body {
   margin: 0;
   padding: 0;
@@ -57,24 +56,19 @@ img {
   max-width: 100%;
 }
 
-/*Grid*/
 .page-body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  min-height: 100%;
+  background-color: var(--basic-gray);
 }
 
-.content {
+.main-content {
   width: 1200px;
   margin: 0 auto;
-  background-color: var(--light-gray);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
-.description {
   background-color: var(--basic-white);
 }
 
-/* Navigation */
 .main-header {
   position: relative;
 }
@@ -88,15 +82,9 @@ img {
   margin-left: -70px;
 }
 
-.main-navigation {
-  background-color: var(--basic-white);
-
-}
-
 .site-navigation {
   list-style: none;
   display: flex;
-
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -114,10 +102,12 @@ img {
 
 .site-navigation-item:nth-child(2) {
   text-align: left;
+  margin-right: 72px;
 }
 
 .site-navigation-item:nth-child(3) {
   text-align: right;
+  margin-left: 72px;
 }
 
 .site-navigation-item:last-child {
@@ -130,8 +120,6 @@ img {
   font-size: 14px;
   line-height: 26px;
   text-align: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .site-navigation-link:hover {
@@ -146,7 +134,7 @@ img {
 .site-navigation-link-current {
   color: var(--muddy-gray);
 }
-/*Head*/
+
 .logo {
   position: relative;
   z-index: 1;
@@ -162,15 +150,8 @@ img {
 
 .logo-picture {
   padding-top: 77px;
-  padding-bottom: 81px;
+  padding-bottom: 75px;
 }
-
-.white-peaks {
-  position: absolute;
-  left: 0px;
-  top: 456px;
-}
-/*Base-section*/
 
 .features-list {
   list-style: none;
@@ -181,27 +162,27 @@ img {
 .features-list-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
+  margin-top: 54px;
 }
 
 .features-list-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   grid-column: 1 / 4;
 }
+
 .blue-block {
   background-color: var(--basic-blue);
   color: var(--basic-white);
-  padding-top: 50px;
-  padding-bottom: 54px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .gray-block {
   background-color: var(--basic-gray);
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 54px;
   padding-left: 70px;
   padding-right: 70px;
@@ -213,20 +194,21 @@ img {
   grid-template-rows: 256px;
   grid-column: 1 / 4;
 }
+
 .grid-feature-element-blue-block {
   grid-column: 3 / 4;
-
 }
+
 .feature-photo-1 {
   grid-column: 2 / 4;
   margin: auto;
 }
+
 .feature-photo-2 {
   margin: auto;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
 }
-
 
 .base-section {
   text-align: center;
@@ -247,8 +229,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 42px;
-  margin-bottom: 42px;
-
+  margin-bottom: 46px;
 }
 
 .features-title {
@@ -257,31 +238,67 @@ img {
   line-height: 21px;
   margin: 0;
   padding: 0;
-
-}
-.features-title-icon {
-  padding-bottom: 30px;
 }
 
 .features-item {
-  padding-top: 60px;
+  padding-top: 61px;
   padding-bottom: 82px;
   padding-left: 50px;
   padding-right: 50px;
+}
 
+.features-item-present {
+  padding-top: 56px;
+}
+
+.features-item-house::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 26px;
+  width: 76px;
+  height: 72px;
+}
+
+.features-item-burger::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 26px;
+  width: 76px;
+  height: 72px;
+}
+
+.features-item-present::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-present.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 64px;
+  height: 78px;
 }
 
 .booking-section-title {
   font-family: var(--font-bold);
   font-size: 30px;
   line-height: 24px;
-  margin-top: 58px;
-  margin-bottom: 24px;
+  margin-top: 56px;
+  margin-bottom: 32px;
 }
 
-/*Popup*/
+.base-text-bbking-section {
+  line-height: 24px
+}
+
 .button-search-hotel {
-  margin-top: 51px;
+  margin: 0;
+  margin-top: 45px;
   width: 568px;
   height: 86px;
   background-color: var(--muddy-gray);
@@ -299,6 +316,7 @@ img {
   padding-left: 124px;
   padding-right: 124px;
 }
+
 .button-search-hotel:hover {
   background-color: var(--muddy-gray-hover);
   outline: 0;
@@ -324,7 +342,7 @@ img {
 .popup .button {
   display: block;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 23px;
   padding-top: 16px;
   padding-bottom: 16px;
   color: var(--basic-white);
@@ -373,8 +391,6 @@ img {
   border: none;
   box-sizing: border-box;
   font: inherit;
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .visit-item-1 {
@@ -383,7 +399,9 @@ img {
 
 .visit-item-1 input {
   width: 308px;
-  padding-left: 13px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 14px;
 }
 
 .visit-item-1 input:focus {
@@ -399,6 +417,9 @@ img {
 
 .visit-item-1 input:hover {
   background-color: var(--gray-for-input);
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 16px;
 }
 
 .visit-item-2 {
@@ -408,30 +429,29 @@ img {
 .visit-item-2 input {
   text-align: center;
   width: 38px;
-  padding: 0;
 }
 
 .arrival-date {
-  padding-right: 20px;
-  padding-top: 6px;
+  padding-right: 22px;
+  padding-top: 4px;
   padding-bottom: 6px;
 }
 
 .departure-date {
-  padding-right: 16px;
-  padding-top: 6px;
+  padding-right: 19px;
+  padding-top: 4px;
   padding-bottom: 6px;
 }
 
 .adults {
   padding-right: 38px;
-  padding-top: 6px;
+  padding-top: 4px;
   padding-bottom: 6px;
 }
 
 .children {
-  padding-right: 20px;
-  padding-top: 6px;
+  padding-right: 28px;
+  padding-top: 4px;
   padding-bottom: 6px;
 }
 
@@ -496,19 +516,32 @@ img {
   cursor: pointer;
 }
 
-.visit-item-2 input[type=number]::-webkit-inner-spin-button,
-.visit-item-2 input[type=number]::-webkit-outer-spin-button {
+.visit-item-2 input, .price input::-webkit-inner-spin-button,
+.visit-item-2 input, .price input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
- /* Filter*/
+.visit-item-2 input, .price input {
+  -moz-appearance: textfield;
+}
+
+.visit-item-2 input::-webkit-inner-spin-button,
+.visit-item-2 input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.visit-item-2 input, .price input {
+  -moz-appearance: textfield;
+}
+
 .filter {
   display: grid;
   grid-template-columns: 300px 300px 1fr;
   color: var(--basic-white);
   background-image: url("../img/background-filter-hotels.jpg");
-  background-color: var(--basic-blue);
+  background-color: var(--dust-blue);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -521,25 +554,20 @@ img {
 }
 
 .filter-buildings {
-  margin-left: 72px;
-  margin-top: 26px;
+  padding-left: 72px;
+  padding-top: 22px;
 }
 
 .filter-houses {
-  margin-left: 47px;
-  margin-top: 26px;
+  padding-left: 26px;
+  padding-top: 22px;
 }
 
 .filter-price {
   margin-left: auto;
-  margin-right: 72px;
-  margin-top: 26px;
-  margin-bottom: 32px;
-}
-
-.filter-price li{
-  padding-bottom: 0;
-  line-height: 21px;
+  padding-right: 70px;
+  padding-top: 22px;
+  padding-bottom: 32px;
 }
 
 .filter legend {
@@ -552,7 +580,7 @@ img {
 .filter ul {
   list-style: none;
   font-size: 14px;
-  line-height: 46px;
+  line-height: 47px;
   margin: auto;
 }
 
@@ -560,13 +588,14 @@ img {
   position: relative;
   cursor: pointer;
   user-select: none;
+  padding-top: 2px;
 }
 
 .filter-checkbox + label::before {
   content: "";
   position: absolute;
   left: -40px;
-  top: -3px;
+  top: 0;
   width: 19px;
   height: 19px;
   border: 2px solid var(--basic-white);
@@ -579,7 +608,7 @@ img {
   position: absolute;
   display: none;
   left: -40px;
-  top: -3px;
+  top: 0;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -589,7 +618,7 @@ img {
   content: "";
   position: absolute;
   left: -40px;
-  top: -3px;
+  top: 0px;
   width: 26px;
   height: 26px;
   background-image: url("../img/checkbox-on.svg");
@@ -600,26 +629,23 @@ img {
   content: "";
   position: absolute;
   left: -40px;
-  top: -3px;
+  top: 0;
   width: 19px;
   height: 19px;
   border: 2px solid var(--basic-white);
   border-radius: 3px;
   cursor: pointer;
 }
-/*
+
 .filter-checkbox-on path:disabled {
   fill: var(--locked-gray);
 }
 
 .filter-checkbox + label:disabled {
   color: var(--locked-gray);
-}*/
-
-/*range-filter*/
+}
 
 .range-filter {
-  margin-top: 10px;
   margin-bottom: 32px;
 }
 
@@ -644,6 +670,7 @@ img {
 .min-start {
   margin-left: auto;
 }
+
 .max-start {
   margin-left: auto;
 }
@@ -667,13 +694,18 @@ img {
   margin: 0;
 }
 
-.line {
+.price-start input {
+  width: 56px;
+}
+
+.line::after {
+  content: "";
   position: absolute;
   width: 2px;
   height: 22px;
   background-color: var(--basic-white);
-  top: 6px;
-  right: 160px;
+  top: 5px;
+  right: 158px;
 }
 
 .controler .scale-bar {
@@ -695,7 +727,6 @@ img {
   cursor: pointer;
 }
 
-
 .controler .toggle:hover {
   width: 5px;
   height: 5px;
@@ -711,8 +742,7 @@ img {
 
 .button-show {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 86px;
   border: 2px solid;
   border-radius: 2px;
   border-color: var(--basic-white);
@@ -749,8 +779,8 @@ img {
   flex-direction: row;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 29px;
+  padding-bottom: 32px;
   align-items: baseline;
   background-color: var(--basic-white);
   border-bottom: 1px solid var(--line-light-gray);
@@ -760,7 +790,8 @@ img {
   font-size: 12px;
   line-height: 18px;
   margin: 0;
-  margin-left: 40px;
+  margin-left: 48px;
+  align-self: center;
 }
 
 .button-sorting {
@@ -770,13 +801,13 @@ img {
   border-bottom: 1px dotted;
   border-color: var(--basic-blue);
   padding: 0;
-  margin-left: 32px;
+  margin-left: 30px;
 }
 
 .button-sorting-current {
   color: var(--basic-blue);
   border: none;
-  margin-left: 40px;
+  margin-left: 36px;
 }
 
 .button-sorting-inactive {
@@ -803,6 +834,7 @@ img {
 .sorting-button {
   border: none;
   background-color: var(--basic-white);
+  padding: 2px;
 }
 
 .sorting-buttons-triangle {
@@ -829,8 +861,6 @@ img {
 .sorting-buttons-triangle-curent path {
   fill: var(--basic-blue);
 }
-
-/*Catalog*/
 
 .hotels-list {
   list-style: none;
@@ -883,6 +913,7 @@ img {
 
 .base-text-hotel {
   display: inline-block;
+  vertical-align: top;
   margin-top: 6px;
   margin-right: 6px;
   margin-bottom: 16px;
@@ -908,6 +939,7 @@ img {
   background-image: url("../img/star.svg");
   background-repeat: space;
   right: 0;
+  top: 5px;
 }
 
 .rating-star-2::before {
@@ -918,6 +950,7 @@ img {
   background-image: url("../img/star.svg");
   background-repeat: space;
   right: 0;
+  top: 5px;
 }
 
 .rating-star-3::before {
@@ -928,9 +961,9 @@ img {
   background-image: url("../img/star.svg");
   background-repeat: space;
   right: 0;
+  top: 5px;
 }
 
-/*Catalog's buttons*/
 .hotel-button {
   display: flex;
   margin: auto;
@@ -945,7 +978,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   border: none;
-
 }
 
 .details {
@@ -981,8 +1013,6 @@ img {
   outline: 0;
 }
 
-
-/*Footer*/
 .main-footer {
   position: relative;
   color: var(--basic-black);
@@ -996,27 +1026,25 @@ img {
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-
 }
 
 .footer-main-page {
-  margin-top: -120px;
-
+  margin-top: -126px;
 }
 
 .contact-link {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .footer-contacts p {
   font-family: var(--font-bold);
+  text-align: center;
   font-size: 21px;
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: 36px;
+  padding-top: 22px;
+  padding-bottom: 36px;
+  padding-left: 72px;
 }
 
 .footer-contacts a {
@@ -1035,8 +1063,9 @@ img {
 
 .footer-link {
   margin: 0;
-  margin-top: 39px;
-  margin-bottom: 41px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  padding-left: 64px;
 }
 
 .footer-social a {
@@ -1074,8 +1103,6 @@ img {
   opacity: 0.3;
 }
 
-/*Socai button*/
-
 .social-button {
   display: flex;
   align-items: center;
@@ -1083,7 +1110,6 @@ img {
   width: 46px;
   height: 46px;
   background-color: var(--basic-blue);
-
 }
 
 .social-button:hover {
