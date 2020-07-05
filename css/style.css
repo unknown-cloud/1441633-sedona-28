@@ -408,9 +408,9 @@ img {
   background-color: var(--basic-white);
   border: 2px solid var(--light-gray);
   outline: 0;
-  padding-top: 4px;
+  padding-top: 2px;
   padding-bottom: 4px;
-  padding-left: 11px;
+  padding-left: 14px;
   padding-right: 38px;
   vertical-align: middle;
 }
@@ -419,7 +419,8 @@ img {
   background-color: var(--gray-for-input);
   padding-top: 4px;
   padding-bottom: 6px;
-  padding-left: 16px;
+  padding-left: 14px;
+  border: none;
 }
 
 .visit-item-2 {
