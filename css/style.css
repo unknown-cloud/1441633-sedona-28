@@ -638,12 +638,19 @@ img {
   cursor: pointer;
 }
 
-.filter-checkbox-on path:disabled {
-  fill: var(--locked-gray);
+.filter-checkbox-on:disabled {
 }
 
-.filter-checkbox + label:disabled {
-  color: var(--locked-gray);
+.filter-checkbox:disabled {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid var(--locked-gray);
 }
 
 .range-filter {
