@@ -26,6 +26,8 @@
 
   --basic-gray: #EEEEEE;
   --words-gray: #666666;
+  --icon-gray: #A9A9A9;
+  --triangle-gray: #CACACA;
   --muddy-gray: #766357;
   --muddy-gray-hover: #604E43;
   --muddy-gray-active: #503E33;
@@ -479,22 +481,26 @@ img {
   padding-bottom: 14px;
 }
 
-.visit-icons:hover path {
+.visit-icons {
+  fill: var(--icon-gray);
+}
+
+.visit-icons:hover {
   fill: var(--basic-black);
   outline: 0;
 }
 
-.visit-icons:active path {
+.visit-icons:active {
   fill: var(--basic-blue);
   outline: 0;
 }
 
-.visit-icons:hover rect {
+.visit-icons:hover {
   fill: var(--basic-black);
   outline: 0;
 }
 
-.visit-icons:active rect {
+.visit-icons:active {
   fill: var(--basic-blue);
   outline: 0;
 }
@@ -615,7 +621,7 @@ img {
   cursor: pointer;
 }
 
-.filter-checkbox-on:checked + label::after {
+.filter-checkbox:checked + label::after {
   content: "";
   position: absolute;
   left: -40px;
@@ -626,31 +632,38 @@ img {
   background-repeat: no-repeat;
 }
 
-.filter-checkbox + label::before {
+.filter-checkbox:disabled + label::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: 0;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--basic-white);
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.filter-checkbox-on:disabled {
-}
-
-.filter-checkbox:disabled {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 0;
-  width: 19px;
-  height: 19px;
-  border-radius: 3px;
-  cursor: pointer;
   border: 2px solid var(--locked-gray);
+  border-radius: 3px;
+  left: -40px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.filter-checkbox:disabled + input::before {
+  content: "";
+  position: absolute;
+  display: none;
+  left: -40px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.filter-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
 }
 
 .range-filter {
@@ -850,23 +863,24 @@ img {
   height: 12px;
   border: none;
   cursor: pointer;
+  fill: var(--triangle-gray);
 }
 
 .sorting-buttons-2 {
   transform: rotate(-180deg);
 }
 
-.sorting-buttons-triangle:hover path{
+.sorting-buttons-triangle:hover {
   fill: var(--basic-black);
   outline: 0;
 }
 
-.sorting-buttons-triangle:active path {
+.sorting-buttons-triangle:active {
   fill: var(--basic-blue);
   outline: 0;
 }
 
-.sorting-buttons-triangle-curent path {
+.sorting-buttons-triangle-curent {
   fill: var(--basic-blue);
 }
 
@@ -1102,11 +1116,11 @@ img {
   vertical-align: middle;
 }
 
-.icon-academy:hover path {
+.icon-academy:hover {
   fill: var(--basic-blue);
 }
 
-.icon-academy:active path {
+.icon-academy:active {
   fill: var(--basic-black);
   opacity: 0.3;
 }
@@ -1118,6 +1132,10 @@ img {
   width: 46px;
   height: 46px;
   background-color: var(--basic-blue);
+}
+
+.social-icon {
+  fill: var(--basic-white);
 }
 
 .social-button:hover {
