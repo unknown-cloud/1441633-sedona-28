@@ -141,7 +141,8 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  background-color: var(--basic-white);
+  min-height: 509px;
+  background-color: var(--dust-blue);
   background-image: url("../img/white-peaks.svg"),
                     url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -506,6 +507,11 @@ img {
   background-color: var(--light-gray);
   border: none;
   cursor: pointer;
+}
+
+.map {
+  min-height: 594px;
+  background-color: var(--basic-gray);
 }
 
 .visit-item-2 input, .price input::-webkit-inner-spin-button,
