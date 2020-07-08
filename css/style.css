@@ -323,6 +323,7 @@ img {
 
 .button-search-hotel:hover {
   background-color: var(--muddy-gray-hover);
+  cursor: pointer;
 }
 
 .button-search-hotel:active {
@@ -358,6 +359,7 @@ img {
 
 .popup .button:hover {
   background-color: var(--deep-blue);
+  cursor: pointer;
 }
 
 .popup .button:active {
@@ -772,6 +774,7 @@ img {
   border: 2px solid;
   border-color: var(--basic-white);
   color: var(--basic-black);
+  cursor: pointer;
 }
 
 .button-show:hover {
@@ -826,6 +829,7 @@ img {
 
 .button-sorting:hover {
   color: var(--basic-blue);
+  cursor: pointer;
 }
 
 .button-sorting:active {
@@ -1014,6 +1018,7 @@ img {
 
 .button-reserve:hover {
   background-color: var(--muddy-gray-hover);
+  cursor: pointer;
 }
 
 .button-reserve:active {
