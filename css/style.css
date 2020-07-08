@@ -839,16 +839,19 @@ img {
   padding: 2px;
 }
 
-.sorting-buttons-triangle svg{
+.sorting-buttons-triangle {
   width: 12px;
   height: 12px;
   border: none;
   cursor: pointer;
-  fill: var(--triangle-gray);
 }
 
 .sorting-buttons-2 {
   transform: rotate(-180deg);
+}
+
+.sorting-buttons-triangle svg {
+  fill: var(--triangle-gray);
 }
 
 .sorting-buttons-triangle:hover svg {
