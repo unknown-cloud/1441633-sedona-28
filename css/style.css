@@ -194,7 +194,6 @@ img {
 .grid-feature {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 256px;
   grid-column: 1 / 4;
 }
 
@@ -303,8 +302,11 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 124px;
+  padding-right: 124px;
   width: 568px;
-  height: 86px;
   background-color: var(--muddy-gray);
   border: none;
   font-family: var(--font-bold);
