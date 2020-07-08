@@ -322,12 +322,10 @@ img {
 
 .button-search-hotel:hover {
   background-color: var(--muddy-gray-hover);
-  outline: 0;
 }
 
 .button-search-hotel:active {
   background-color: var(--muddy-gray-active);
-  outline: 0;
 }
 
 .search-hotel:active {
@@ -359,13 +357,11 @@ img {
 
 .popup .button:hover {
   background-color: var(--deep-blue);
-  outline: 0;
 }
 
 .popup .button:active {
   background-color: var(--dust-blue);
   color: rgba(255, 255, 255, 0.3);
-  outline: 0;
 }
 
 .visit-form {
@@ -486,24 +482,12 @@ img {
   fill: var(--icon-gray);
 }
 
-.visit-icons:hover {
+.visit-icons:hover svg {
   fill: var(--basic-black);
-  outline: 0;
 }
 
-.visit-icons:active {
+.visit-icons:active svg {
   fill: var(--basic-blue);
-  outline: 0;
-}
-
-.visit-icons:hover {
-  fill: var(--basic-black);
-  outline: 0;
-}
-
-.visit-icons:active {
-  fill: var(--basic-blue);
-  outline: 0;
 }
 
 .reduce-button {
@@ -782,11 +766,9 @@ img {
   border: 2px solid;
   border-color: var(--basic-white);
   color: var(--basic-black);
-  outline: 0;
 }
 
 .button-show:hover {
-  outline: 0;
 }
 
 .base-title-search {
@@ -838,14 +820,12 @@ img {
 
 .button-sorting:hover {
   color: var(--basic-blue);
-  outline: 0;
 }
 
 .button-sorting:active {
   color: var(--basic-black);
   opacity: 1;
   border: none;
-  outline: 0;
 }
 
 .sorting-buttons-group {
@@ -859,7 +839,7 @@ img {
   padding: 2px;
 }
 
-.sorting-buttons-triangle {
+.sorting-buttons-triangle svg{
   width: 12px;
   height: 12px;
   border: none;
@@ -871,17 +851,15 @@ img {
   transform: rotate(-180deg);
 }
 
-.sorting-buttons-triangle:hover {
+.sorting-buttons-triangle:hover svg {
   fill: var(--basic-black);
-  outline: 0;
 }
 
-.sorting-buttons-triangle:active {
+.sorting-buttons-triangle:active svg{
   fill: var(--basic-blue);
-  outline: 0;
 }
 
-.sorting-buttons-triangle-curent {
+.sorting-buttons-triangle-curent svg{
   fill: var(--basic-blue);
 }
 
@@ -1027,13 +1005,11 @@ img {
 
 .button-reserve:hover {
   background-color: var(--muddy-gray-hover);
-  outline: 0;
 }
 
 .button-reserve:active {
   background-color: var(--muddy-gray-active);
   color: rgba(255, 255, 255, 0.3);
-  outline: 0;
 }
 
 .main-footer {
