@@ -542,7 +542,11 @@ img {
 
 .map {
   min-height: 594px;
+  background-image: url("../img/map.jpg");
   background-color: var(--basic-gray);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .visit-item-2 input, .price input::-webkit-inner-spin-button,
