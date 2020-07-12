@@ -16,6 +16,7 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
+  popup.classList.remove("modal-error");
 
   if (storage) {
     arrival.value = storage;
@@ -42,6 +43,7 @@ window.addEventListener("keydown", function (evt) {
     if(popup.classList.contains("modal-show")) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 })
