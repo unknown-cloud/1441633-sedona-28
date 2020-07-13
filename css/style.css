@@ -615,6 +615,7 @@ img {
   font-size: 14px;
   line-height: 47px;
   margin: auto;
+  padding-bottom: 17px;
 }
 
 .filter-option label {
@@ -980,7 +981,7 @@ img {
   flex-shrink: 0;
 }
 
-.rating-star-1::before {
+.rating-star-4::before {
   content: "";
   position: absolute;
   width: 88px;
@@ -991,10 +992,21 @@ img {
   top: 5px;
 }
 
+.rating-star-1::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  right: 0;
+  top: 5px;
+}
+
 .rating-star-2::before {
   content: "";
   position: absolute;
-  width: 64px;
+  width: 42px;
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
@@ -1005,7 +1017,18 @@ img {
 .rating-star-3::before {
   content: "";
   position: absolute;
-  width: 42px;
+  width: 64px;
+  height: 18px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  right: 0;
+  top: 5px;
+}
+
+.rating-star-5::before {
+  content: "";
+  position: absolute;
+  width: 110px;
   height: 18px;
   background-image: url("../img/star.svg");
   background-repeat: space;
@@ -1125,7 +1148,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
